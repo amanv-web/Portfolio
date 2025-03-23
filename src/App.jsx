@@ -5,8 +5,10 @@ import About from "./Pages/About";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Skills from "./Pages/Skills";
+import SmoothScroll from "./components/features/smoothScroll";
 
 function App() {
+  SmoothScroll();
   return (
     <Router>
       <Routes>
