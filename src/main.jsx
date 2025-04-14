@@ -12,7 +12,7 @@ createRoot(document.getElementById("root")).render(
     <AnimatedCursor
 innerSize={12}
 outerSize={40}
-color="0, 174, 255" 
+color="0, 255, 255"
 outerAlpha={0.3}
 innerScale={0.7}
 outerScale={2}
