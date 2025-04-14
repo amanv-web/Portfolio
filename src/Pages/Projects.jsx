@@ -6,8 +6,7 @@ import ProjectsTimeline1 from "../components/Project/ProjectsTimeline1";
 import ProjectsTimeline2 from "../components/Project/ProjectsTimeline2";
 import ProjectsTimeline3 from "../components/Project/ProjectsTimeline3";
 import ProjectsTimeline4 from "../components/Project/ProjectsTimeline4";
-import "atropos/css";
-import Atropos from "atropos/react";
+
 function Projects() {
   const projectRefs = useRef([]);
 
@@ -60,12 +59,9 @@ function Projects() {
             <div className="my-atropos, myDiv bg-[#1E1E1E] md:max-w-5xl md:px-4 md:mx-auto w-10/12 font-thin overflow-hidden rounded-2xl"
               key={index}
               ref={(el) => (projectRefs.current[index] = el)}>
-              <Atropos
-                className="my-atropos"
-              >
-
+             
               <Component />
-              </Atropos>
+             
        
               </div>
           ))}

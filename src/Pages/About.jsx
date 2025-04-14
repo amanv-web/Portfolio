@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "atropos/css";
+import Atropos from "atropos/react";
 function About() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -46,11 +48,15 @@ function About() {
         <div
           className=" p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center "
         >
+           <Atropos className="my-atropos">
+    
+
           <img
             src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
             alt="Profile"
             className=" myimage w-90 h-120 "
           />
+                </Atropos>
         </div>
         <div className="  md:pt-5 md:w-4/6  md:pl-0 pl-5">
           <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">About me</h1>
