@@ -113,7 +113,7 @@ function Skills() {
           <div className="movimg1 flex flex-wrap justify-center gap-6 p-6">
             {frontendTech.map((tech, index) => (
               <div key={index} className="flex flex-col items-center ">
-                <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10 " />
+                <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10 "    lazyload="lazy" />
                 <p className="text-sm font-semibold mt-2 ">{tech.name}</p>
               </div>
             ))}
@@ -125,7 +125,7 @@ function Skills() {
             <div className="movimg2 flex flex-wrap justify-center gap-6 p-6">
               {devTools.map((tech, index) => (
                 <div key={index} className="flex flex-col items-center">
-                  <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10" />
+                  <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10"     lazyload="lazy"/>
                   <p className="text-sm font-semibold mt-2">{tech.name}</p>
                 </div>
               ))}
@@ -138,7 +138,7 @@ function Skills() {
           <div className="movimg3 flex flex-wrap justify-center gap-6 p-6">
             {backendTech.map((tech, index) => (
               <div key={index} className="flex flex-col items-center">
-                <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10" />
+                <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10"    lazyload="lazy" />
                 <p className="text-sm font-semibold mt-2">{tech.name}</p>
               </div>
             ))}

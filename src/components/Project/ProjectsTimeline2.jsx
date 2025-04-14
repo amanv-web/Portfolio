@@ -15,6 +15,7 @@ function ProjectsTimeline4() {
                 className="w-full md:h-40  h-56 rounded-lg"
                 src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744642118/Screenshot_7_a1qfes.png"
                 alt=""
+                lazyload="lazy"
               /></a>
             </div>
           </div>

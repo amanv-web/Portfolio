@@ -55,7 +55,7 @@ function About() {
             src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
             alt="Profile"
             className=" myimage w-90 h-120 "
-            lazyload="true"
+            lazyload="lazy"
           />
                 </Atropos>
         </div>
