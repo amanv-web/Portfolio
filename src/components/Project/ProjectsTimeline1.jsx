@@ -1,4 +1,5 @@
 import React from "react";
+
 import { motion } from "framer-motion";
 export default function ProjectsTimeline1() {
   return (
@@ -10,10 +11,9 @@ export default function ProjectsTimeline1() {
   <div className="text-center sm:text-left mb-1 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-[#00FFFF]">
   
   <a href="https://anime-stickers.vercel.app/"><h3 className="text-3xl font-semibold text-left text-[#00FFFF]">Anime Nexus</h3>
-
 <img
   className="w-full md:h-40   h-56 rounded-lg"
-  src="https://imgur.com/KCx0gVi.png"
+  src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744642118/Screenshot_4_xrtore.png"
   alt=""
 /></a>  
   </div>

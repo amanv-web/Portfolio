@@ -6,7 +6,6 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Skills from "./Pages/Skills";
 import SmoothScroll from "./components/features/smoothScroll";
-
 function App() {
   SmoothScroll();
   return (
@@ -17,6 +16,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
+        
       </Routes>
     </Router>
   );

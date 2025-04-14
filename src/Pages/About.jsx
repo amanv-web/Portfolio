@@ -47,7 +47,7 @@ function About() {
           className=" p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center "
         >
           <img
-            src="https://imgur.com/ScTLwjd.png"
+            src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
             alt="Profile"
             className=" myimage w-90 h-120 "
           />

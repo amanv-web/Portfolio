@@ -6,11 +6,17 @@ import ProjectsTimeline1 from "../components/Project/ProjectsTimeline1";
 import ProjectsTimeline2 from "../components/Project/ProjectsTimeline2";
 import ProjectsTimeline3 from "../components/Project/ProjectsTimeline3";
 import ProjectsTimeline4 from "../components/Project/ProjectsTimeline4";
-
+import "atropos/css";
+import Atropos from "atropos/react";
 function Projects() {
   const projectRefs = useRef([]);
 
-  const list = [ProjectsTimeline1, ProjectsTimeline3, ProjectsTimeline4, ProjectsTimeline2];
+  const list = [
+    ProjectsTimeline1,
+    ProjectsTimeline3,
+    ProjectsTimeline4,
+    ProjectsTimeline2,
+  ];
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -47,21 +53,27 @@ function Projects() {
         <h1 className="md:text-8xl text-6xl font-extrabold flex justify-center mt-10">
           Projects
         </h1>
+
         <div className="space-y-15 mt-20 flex justify-center items-center flex-col">
           {list.map((Component, index) => (
-            <div
+
+            <div className="my-atropos, myDiv bg-[#1E1E1E] md:max-w-5xl md:px-4 md:mx-auto w-10/12 font-thin overflow-hidden rounded-2xl"
               key={index}
-              ref={(el) => (projectRefs.current[index] = el)}
-              className="myDiv bg-[#1E1E1E] md:max-w-5xl md:px-4 md:mx-auto w-10/12 font-thin rounded-2xl"
-            >
+              ref={(el) => (projectRefs.current[index] = el)}>
+              <Atropos
+                className="my-atropos"
+              >
+
               <Component />
-            </div>
+              </Atropos>
+       
+              </div>
           ))}
-        </div>
-        <h1 className="md:text-3xl text-2xl font-extrabold flex justify-center mt-10">
-          More on Github.....
-        </h1>
       </div>
+      <h1 className="md:text-3xl text-2xl font-extrabold flex justify-center mt-10">
+        More on Github.....
+      </h1>
+    </div >
     </>
   );
 }

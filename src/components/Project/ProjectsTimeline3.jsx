@@ -14,7 +14,7 @@ function ProjectsTimeline3() {
               </h3>
               <img
                 className="w-full md:h-40 h-56 rounded-lg"
-                src="https://imgur.com/zLf0XBk.png"
+                src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744642117/Screenshot_5_sywnku.png"
                 alt=""
               /></a>
             </div>

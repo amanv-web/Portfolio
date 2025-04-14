@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Typewriter from "./Typewriter";
-
+import 'atropos/css';
+import Atropos from 'atropos/react';
 
 function HeroSection() {
   return (
@@ -27,7 +28,7 @@ function HeroSection() {
             </p>
           </div>
           <div className="flex space-x-4 pt-5 md:pl-0  pl-10 ">
-            <a  href="mailto:getintouch.amanv@hotmail.com" className=" hover:bg-[#7fffffc7] text-black  py-2 px-4 rounded-full h-full  bg-[#00FFFF]   bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border  ">
+            <a href="mailto:getintouch.amanv@hotmail.com" className=" hover:bg-[#7fffffc7] text-black  py-2 px-4 rounded-full h-full  bg-[#00FFFF]   bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border  ">
               Hire Me
             </a>
             <a rel="stylesheet" href="https://drive.google.com/file/d/1IT9hdTzZoitMdERo00eBZ0ivMR3fpUJN/view?usp=sharing" >
@@ -39,24 +40,26 @@ function HeroSection() {
         </motion.div>
 
         <div className="md:pl-0   md:pt-0 pt-10 sm:max-w-full flex justify-center items-center">
-                   
-                   <motion.div
-  initial={{ y: "-5vw", opacity: 0 }}
-  animate={{ y: 0, opacity: 1 }}
-  transition={{ type: "spring", duration: 1, delay: 0.5 }}
-  className="flex justify-center sm:justify-center items-center md:w-90 md:h-90 h-60 w-60 overflow-hidden rounded-full shadow-[8px_8px_16px_#1a1a1a,-8px_-8px_16px_#2a2a2a] transition-all"
->
-  <motion.img
-    whileHover={{ scale: 1.05 }}
-    transition={{ type: "spring", stiffness: 300 }}
-    className="md:w-90 md:h-90 h-70 w-60 overflow-hidden rounded-full 
+
+          <motion.div
+            initial={{ y: "-5vw", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", duration: 1, delay: 0.5 }}
+            className="flex justify-center sm:justify-center items-center md:w-90 md:h-90 h-60 w-60 overflow-hidden rounded-full shadow-[8px_8px_16px_#1a1a1a,-8px_-8px_16px_#2a2a2a] transition-all"
+          >
+            <Atropos className="my-atropos overflow-hidden  rounded-full ">
+              <motion.img
+                whileHover={{ scale: 1.10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="md:w-90 md:h-110 h-70 w-60 overflow-hidden rounded-full 
                shadow-[8px_8px_16px_#1a1a1a,-8px_-8px_16px_#2a2a2a] 
                transition-all"
-    src="https://imgur.com/zjs5lRE.png"
-    alt="Profile"
-  />
-</motion.div>
-
+                src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608384/profile_-_Imgur_z0fd9m.jpg"
+                alt="Profile"
+                
+                />
+      </Atropos>
+          </motion.div>
         </div>
       </div>
     </>
