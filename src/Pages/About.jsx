@@ -55,6 +55,7 @@ function About() {
             src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
             alt="Profile"
             className=" myimage w-90 h-120 "
+            lazyload="true"
           />
                 </Atropos>
         </div>
@@ -62,7 +63,7 @@ function About() {
           <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">About me</h1>
           <p className=" font-  justify-self-auto text-md font text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full text-justify flex flex-wrap">
             {words.map((word, index) => (
-              <motion.span
+              <motion.p
                 key={index}
                 className="mr-2"
                 initial={{ opacity: 0, y: 10 }}
@@ -76,7 +77,7 @@ function About() {
                 viewport={{ once: true }}
               >
                 {word}
-              </motion.span>
+              </motion.p>
             ))}
           </p>
         </div>
