@@ -66,11 +66,11 @@ function About() {
               <motion.p
                 key={index}
                 className="mr-2"
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0 }}
                 transition={{
                   delay: index * 0.01,
                   duration: 1,
-                  type: "spring",
+                 
                   bounce: 0,
                 }}
                 whileInView={{ opacity: 1, y: 0 }}
