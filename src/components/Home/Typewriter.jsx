@@ -19,7 +19,7 @@ export default function Preview() {
           <TextRotate
             texts={[
               "Web developer",
-              "Software engineer",
+              "Software developer",
             ]}
             mainClassName="text-white px-2 sm:px-2 md:px-3 text-[#49e3da] overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
             staggerFrom={"last"}
