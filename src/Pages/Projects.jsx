@@ -56,7 +56,7 @@ function Projects() {
         <div className="space-y-15 mt-20 flex justify-center items-center flex-col">
           {list.map((Component, index) => (
 
-            <div className="my-atropos, myDiv bg-[#1E1E1E] md:max-w-5xl md:px-4 md:mx-auto w-10/12 font-thin overflow-hidden rounded-2xl"
+            <div className="my-atropos, myDiv ring-[0.3px] bg-[#171717] md:max-w-5xl md:px-4 md:mx-auto w-10/12 font-thin overflow-hidden rounded-2xl"
               key={index}
               ref={(el) => (projectRefs.current[index] = el)}>
              

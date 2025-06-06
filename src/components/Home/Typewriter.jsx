@@ -10,7 +10,7 @@ export default function Preview() {
       <LayoutGroup>
         <motion.p className="flex whitespace-pre" layout>
           <motion.span
-            className="pt-0.5 sm:pt-1 md:pt-2"
+            className="pt-0.5 sm:pt-1 md:pt-2 text-white"
             layout
             transition={{ type: "spring", damping: 30, stiffness: 400 }}
           >

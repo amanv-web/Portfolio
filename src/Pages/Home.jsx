@@ -8,7 +8,7 @@ import Skills from './Skills'
 import { motion } from 'framer-motion'
 function Home() {
   return (
-    <>
+    <div className='\'>
       <Navbar />
 
       <motion.img src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608366/Mediamodifier-Design-Template_2_j6ll17.png"
@@ -31,7 +31,7 @@ function Home() {
 
 
       </div>
-    </>
+    </div>
   )
 }
 export default Home
