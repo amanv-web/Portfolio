@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import Navbar from '../components/Home/Navbar'
 import gsap from 'gsap';
 import scrollTrigger from 'gsap/ScrollTrigger';
+              import GradientText from '../components/fancy/text/GradientText'
+
 
 function Skills() {
 
@@ -104,7 +106,14 @@ function Skills() {
       <Navbar />
       <div className='pb-20'>
         <div>
-          <h1 className='font-extrabold flex justify-center md:mt-10 my-6 md:text-8xl text-6xl'>Skills</h1>
+         <GradientText
+           colors={["#40ffaa", "#4079ff", "#40ffaa",  "#40ffaa"]}
+           animationSpeed={3}
+           showBorder={false}
+           className="custom-class"
+         >
+               <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">Skills</h1>
+         </GradientText>
         </div>
         <div>
           <h1 className="movh1 text-2xl  md:pl-40 text-[#00FFFF]  pl-10">

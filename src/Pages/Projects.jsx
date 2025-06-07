@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Home/Navbar";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import GradientText from '../components/fancy/text/GradientText'
 
 gsap.registerPlugin(ScrollTrigger);
-import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ProjectContext } from "../components/Project/ProjectList";
 
@@ -12,12 +12,23 @@ function Projects() {
   const { projects } = useContext(ProjectContext);
 
   return (
-    <div className=" my div max-w-5xl md:px-4 md:py-12 mx-auto space-y-5  ">
+    <>
+        <Navbar />
+        
+         <div className=" my div max-w-5xl md:px-4 md:py-12 mx-auto space-y-5  ">
+      
        <div>
-          <h1 className='font-extrabold flex justify-center md:mt-10 my-6 md:text-8xl text-6xl'>Projects</h1>
+    <GradientText
+      colors={["#40ffaa", "#4079ff", "#40ffaa",  "#40ffaa"]}
+      animationSpeed={3}
+      showBorder={false}
+      className="custom-class"
+    >
+          <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">Projects</h1>
+    </GradientText>
         </div>
       {projects.map((project, index) => (
-        <motion.div
+        <div
           key={project.id}
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -66,7 +77,7 @@ function Projects() {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       ))}
 
       {/* Footer */}
@@ -74,6 +85,9 @@ function Projects() {
         More on GitHub.....
       </h1>
     </div>
+        
+        </>
+   
   );
 }
 

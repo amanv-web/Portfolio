@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "atropos/css";
 import Atropos from "atropos/react";
+        import GradientText from '../components/fancy/text/GradientText'
 function About() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -60,7 +61,18 @@ function About() {
                 </Atropos>
         </div>
         <div className="  md:pt-5 md:w-4/6  md:pl-0 pl-5">
-          <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">About me</h1>
+
+
+  
+<GradientText
+  colors={["#40ffaa", "#4079ff", "#40ffaa",  "#40ffaa"]}
+  animationSpeed={3}
+  showBorder={false}
+  className="custom-class"
+>
+      <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">About me</h1>
+</GradientText>
+    
           <p className=" font-  justify-self-auto text-md font text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full text-justify flex flex-wrap">
             {words.map((word, index) => (
               <motion.p

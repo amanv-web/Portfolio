@@ -1,7 +1,7 @@
 
 import { LayoutGroup, motion } from "framer-motion";
 
-import TextRotate from "../../fancy/components/text/text-rotate";
+import TextRotate from "../fancy/text/text-rotate";
 
 
 export default function Preview() {

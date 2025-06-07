@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import Typewriter from "./Typewriter";
 import 'atropos/css';
 import Atropos from 'atropos/react';
+import GradientText from '../fancy/text/GradientText'
 
 function HeroSection() {
+
   return (
     <>
       <div className="md:flex items-center justify-around gap-40   h-screen pb-10">
@@ -19,7 +21,15 @@ function HeroSection() {
           </h1>
           <div>
             <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold">Aman </h1>
-            <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold text-[#00ffff6e]">Vishwakarma</h1>
+        <GradientText
+          colors={["#40ffaa", "#4079ff", "#40ffaa",  "#40ffaa"]}
+          animationSpeed={3}
+          showBorder={false}
+          className="custom-class"
+        >
+              <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold text-[#00ffff6e]">Vishwakarma</h1>
+        </GradientText>
+           
             <Typewriter />
           </div>
           <div>
