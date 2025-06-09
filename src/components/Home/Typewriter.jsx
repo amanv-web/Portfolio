@@ -8,7 +8,7 @@ export default function Preview() {
   return (
     <div className=" text-2xl sm:text-3xl md:text-5xl flex flex-row items-center   dark:text-muted text-foreground  overflow-hidden  ">
       <LayoutGroup>
-        <motion.p className="flex whitespace-pre" layout>
+        <motion.p className="flex sm:px-0 px-10" layout>
           <motion.span
             className="pt-0.5 sm:pt-1 md:pt-2 text-white"
             layout

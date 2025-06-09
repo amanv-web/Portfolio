@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "atropos/css";
 import Atropos from "atropos/react";
-        import GradientText from '../components/fancy/text/GradientText'
+import GradientText from "../components/fancy/text/GradientText";
 function About() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -29,13 +29,9 @@ function About() {
           start: "top 90%",
           end: "bottom 95%",
           scrub: true,
-
         },
       }
     );
-
-
-
   }, []);
 
   const text =
@@ -46,46 +42,40 @@ function About() {
     <>
       <Navbar />
       <div className="md:h-screen flex justify-around wrap text-white overflow-hidden flex-wrap-reverse md:flex-nowrap">
-        <div
-          className=" p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center "
-        >
-           <Atropos className="my-atropos">
-    
-
-          <img
-            src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
-            alt="Profile"
-            className=" myimage w-90 h-120 "
-            lazyload="lazy"
-          />
-                </Atropos>
+        <div className=" p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center ">
+          <Atropos className="my-atropos">
+            <img
+              src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
+              alt="Profile"
+              className=" myimage w-90 h-120 "
+              lazyload="lazy"
+            />
+          </Atropos>
         </div>
         <div className="  md:pt-5 md:w-4/6  md:pl-0 pl-5">
+          <GradientText
+            colors={["#40ffaa", "#4079ff", "#40ffaa", "#40ffaa"]}
+            animationSpeed={3}
+            showBorder={false}
+            className="custom-class"
+          >
+            <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">
+              About me
+            </h1>
+          </GradientText>
 
-
-  
-<GradientText
-  colors={["#40ffaa", "#4079ff", "#40ffaa",  "#40ffaa"]}
-  animationSpeed={3}
-  showBorder={false}
-  className="custom-class"
->
-      <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">About me</h1>
-</GradientText>
-    
-          <p className=" font-  justify-self-auto text-md font text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full text-justify flex flex-wrap">
+          <p className=" justify-self-auto text-md font text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full text-justify flex flex-wrap">
             {words.map((word, index) => (
               <motion.p
                 key={index}
                 className="mr-2"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 0, filter: "blur(5px)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                 transition={{
                   delay: index * 0.01,
                   duration: 1,
-                 
                   bounce: 0,
                 }}
-                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
                 {word}

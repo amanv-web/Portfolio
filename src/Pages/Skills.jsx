@@ -7,31 +7,8 @@ import scrollTrigger from 'gsap/ScrollTrigger';
 
 function Skills() {
 
-  const frontendTech = [
-    { name: "HTML5", logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" },
-    { name: "CSS3", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" },
-    { name: "JavaScript", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" },
-    { name: "React.js", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
-    { name: "Redux", logo: "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" },
-    { name: "Tailwind CSS", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" },
-    { name: "Bootstrap", logo: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" }
-  ];
+ 
 
-  const backendTech = [
-    { name: "MongoDB", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTglV8OKEUEbqJYaxunvJQJdhYKZHJ50X_67A&s" },
-
-    { name: "Node.js", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtb_9zVzsPWq_LDNDBVCsBYFo996KtVyCxWg&s" },
-    { name: "Express.js", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXpCVrym3sQKRS3_hAnLQIocLuMJorvv0Jiw&s" },
-  ];
-
-  const devTools = [
-    { name: "Git", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" },
-    { name: "GitHub", logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" },
-    { name: "Framer Motion", logo: "https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png" },
-    { name: "GSAP", logo: "https://assets.codepen.io/16327/internal/avatars/users/default.png?fit=crop&format=auto&height=256&version=1697554632&width=256" },
-    { name: "Netlify", logo: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Netlify_logo.svg" },
-    { name: "Vercel", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRouZBkJ8YNlcyGGdZ3WJzwLQWK8HDnDY-YOA&s" },
-  ];
 
   useEffect(() => {
     gsap.registerPlugin(scrollTrigger);
@@ -115,47 +92,93 @@ function Skills() {
                <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">Skills</h1>
          </GradientText>
         </div>
-        <div>
-          <h1 className="movh1 text-2xl  md:pl-40 text-[#00FFFF]  pl-10">
-            FrontendTech
-          </h1>
-          <div className="movimg1 flex flex-wrap justify-center gap-6 p-6">
-            {frontendTech.map((tech, index) => (
-              <div key={index} className="flex flex-col items-center ">
-                <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10 "    lazyload="lazy" />
-                <p className="text-sm font-semibold mt-2 ">{tech.name}</p>
-              </div>
-            ))}
-          </div>
-          <div>
-            <h1 className="movh1 text-2xl  md:pl-40 text-[#00FFFF]   pl-10">
-              DevTools & Animation
-            </h1>
-            <div className="movimg2 flex flex-wrap justify-center gap-6 p-6">
-              {devTools.map((tech, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10"     lazyload="lazy"/>
-                  <p className="text-sm font-semibold mt-2">{tech.name}</p>
-                </div>
-              ))}
-            </div>
-          </div></div>
-        <div>
-          <h1 className="movh1 text-2xl   md:pl-40   pl-10 text-gray-500 ">
-            BackendTech & <span className='text-[#00FFFF] '>Database</span>
-          </h1>
-          <div className="movimg3 flex flex-wrap justify-center gap-6 p-6">
-            {backendTech.map((tech, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <img src={tech.logo} alt={tech.name} className="md:w-16 md:h-16 w-10 h-10"    lazyload="lazy" />
-                <p className="text-sm font-semibold mt-2">{tech.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+      <section id="skills" className="py-16  text-white">
+  <div className="max-w-5xl mx-auto ">
+ 
+    <p className="text-center text-lg text-gray-300 mb-10">
+      Over the years, I’ve explored and built amazing things using these technologies. Each of them has helped me shape ideas into real web experiences.
+    </p>
+
+
+    <div className="movimg1 bg-gradient-to-br to-green-800 from-blue-300 outline-blue-300 shadow-green-500 outline rounded-xl p-6 mb-10 shadow-md">
+      <h3 className="text-2xl font-semibold text-center mb-4 text-white">Frontend Development</h3>
+      <div className="flex flex-wrap justify-center gap-4">
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML5" className="w-5 h-5 mr-2" />
+          HTML5
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" className="w-5 h-5 mr-2" />
+          CSS3
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript" className="w-5 h-5 mr-2" />
+          JavaScript
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/react-native.png" alt="React.js" className="w-5 h-5 mr-2" />
+          React.js
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/redux.png" alt="Redux" className="w-5 h-5 mr-2" />
+          Redux
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS" className="w-5 h-5 mr-2" />
+          Tailwind CSS
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/bootstrap.png" alt="Bootstrap" className="w-5 h-5 mr-2" />
+          Bootstrap
+        </span>
+       
       </div>
+    </div>
 
 
+    <div className="movimg2 bg-gradient-to-br to-gray-800 from-blue-300    rounded-xl p-6 mb-10 shadow-lg">
+      <h3 className="text-2xl font-semibold text-center mb-4 text-white">Dev Tools & Animation</h3>
+      <div className="flex flex-wrap justify-center gap-4">
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/git.png" alt="Git" className="w-5 h-5 mr-2" />
+          Git
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" className="w-5 h-5 mr-2 invert" />
+          GitHub
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://tsh.io/wp-content/uploads/fly-images/32664/framer-motion-logo-1-312x211.png" alt="Framer Motion" className="w-5 h-5 mr-2" />
+          Framer Motion
+        </span>
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://pbs.twimg.com/profile_images/1713633504431394816/h28jJ1qM_400x400.jpg" alt="GSAP" className="w-5 h-5 mr-2" />
+          GSAP
+        </span>
+      </div>
+    </div>
+
+  
+    <div className="movimg3 bg-gradient-to-br to-gray-800 from-blue-300   rounded-xl p-6 shadow-lg">
+      <h3 className="text-2xl font-semibold text-center mb-4 text-white">
+        <span className="opacity-50">Backend</span> & Database</h3>
+      <div className="flex flex-wrap justify-center gap-4">
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB" className="w-5 h-5 mr-2" />
+          MongoDB
+        </span>
+       
+        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase" className="w-5 h-5 mr-2" />
+          Firebase
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+        </div>
+  
 
 
     </>
