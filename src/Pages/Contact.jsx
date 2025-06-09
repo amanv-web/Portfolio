@@ -5,6 +5,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
              import GradientText from '../components/fancy/text/GradientText'
+import Svg from "@/components/Home/Svg copy 2";
      
 
 
@@ -12,7 +13,7 @@ function Contact() {
   return (
     <>
       <Navbar />
-
+<Svg/>
       <div className="flex justify-center items-center h-screen md:pb-40 ">
         <div className=" md:w-1/2 md:p-10 p-10 ">
         <GradientText
