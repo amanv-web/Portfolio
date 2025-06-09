@@ -93,17 +93,30 @@ function Skills() {
          </GradientText>
         </div>
       <section id="skills" className="py-16  text-white">
-  <div className="max-w-5xl mx-auto ">
- 
-    <p className="text-center text-lg text-gray-300 mb-10">
+          <p className="text-center text-lg text-gray-300 mb-4">
       Over the years, I’ve explored and built amazing things using these technologies. Each of them has helped me shape ideas into real web experiences.
     </p>
+  <div className="max-w-6xl h-96 mx-auto flex p-8 space-x-8">
+ 
+  
 
 
-    <div className="movimg1 bg-gradient-to-br to-green-800 from-blue-300 outline-blue-300 shadow-green-500 outline rounded-xl p-6 mb-10 shadow-md">
+    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700"
+>
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Frontend Development</h3>
       <div className="flex flex-wrap justify-center gap-4">
+       
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/react-native.png" alt="React.js" className="w-5 h-5 mr-2" />
+          React.js
+        </span>  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS" className="w-5 h-5 mr-2" />
+          Tailwind CSS
+        </span> 
+           <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img src="https://img.icons8.com/color/48/redux.png" alt="Redux" className="w-5 h-5 mr-2" />
+          Redux
+        </span> <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
           <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML5" className="w-5 h-5 mr-2" />
           HTML5
         </span>
@@ -115,18 +128,9 @@ function Skills() {
           <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript" className="w-5 h-5 mr-2" />
           JavaScript
         </span>
-        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/react-native.png" alt="React.js" className="w-5 h-5 mr-2" />
-          React.js
-        </span>
-        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/redux.png" alt="Redux" className="w-5 h-5 mr-2" />
-          Redux
-        </span>
-        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS" className="w-5 h-5 mr-2" />
-          Tailwind CSS
-        </span>
+       
+     
+       
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
           <img src="https://img.icons8.com/color/48/bootstrap.png" alt="Bootstrap" className="w-5 h-5 mr-2" />
           Bootstrap
@@ -136,7 +140,7 @@ function Skills() {
     </div>
 
 
-    <div className="movimg2 bg-gradient-to-br to-gray-800 from-blue-300    rounded-xl p-6 mb-10 shadow-lg">
+    <div className="movimg2 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Dev Tools & Animation</h3>
       <div className="flex flex-wrap justify-center gap-4">
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
@@ -159,7 +163,7 @@ function Skills() {
     </div>
 
   
-    <div className="movimg3 bg-gradient-to-br to-gray-800 from-blue-300   rounded-xl p-6 shadow-lg">
+    <div className="movimg3 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">
         <span className="opacity-50">Backend</span> & Database</h3>
       <div className="flex flex-wrap justify-center gap-4">
