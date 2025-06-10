@@ -43,8 +43,8 @@ function About() {
     <>
       <Navbar />
       <Svg />
-      <div className="md:h-screen flex justify-around wrap text-white overflow-hidden flex-wrap-reverse md:flex-nowrap">
-        <div className=" p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center ">
+      <div className="md:h-screen mt-10 flex justify-around wrap text-white overflow-hidden flex-wrap-reverse md:flex-nowrap">
+        <div className="mt-14 p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center ">
           <Atropos className="my-atropos">
             <img
               src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
@@ -59,7 +59,7 @@ function About() {
             colors={["#40ffaa", "#4079ff", "#40ffaa", "#40ffaa"]}
             animationSpeed={3}
             showBorder={false}
-            className="custom-class"
+            className="custom-class pb-10 "
           >
             <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">
               About me

@@ -14,7 +14,7 @@ function Projects() {
     <>
       <Navbar />
       <div className=" my div max-w-5xl md:px-4 md:py-12 mx-auto space-y-5  ">
-        <Svg />
+
 
         <div>
           <GradientText
