@@ -50,7 +50,7 @@ function Projects() {
                     {project.title}
                   </h3>
                   <img
-                    className="w-full md:h-40 h-56 rounded-lg mt-3"
+                    className="w-full md:h-40 h-56 rounded-lg mt-3 "
                     src={project.image}
                     alt={project.title}
                     loading="lazy"

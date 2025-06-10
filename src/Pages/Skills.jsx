@@ -1,11 +1,15 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/Home/Navbar'
 import gsap from 'gsap';
-import GradientText from '../components/fancy/text/GradientText'
+          import GradientText from '../components/fancy/text/GradientText'
 import Svg from '@/components/Home/Svg copy 2';
 
 
 function Skills() {
+
+ 
+
+
  
 useEffect(() => {
   gsap.fromTo(
@@ -83,33 +87,33 @@ useEffect(() => {
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Frontend Development</h3>
       <div className="flex flex-wrap justify-center gap-4">
        
-        <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/react-native.png" alt="React.js" className="w-5 h-5 mr-2" />
+        <span  className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+          <img loading="lazy" src="https://img.icons8.com/color/48/react-native.png" alt="React.js" className="w-5 h-5 mr-2" />
           React.js
         </span>  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS" className="w-5 h-5 mr-2" />
+          <img  src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS" className="w-5 h-5 mr-2" loading="lazy" />
           Tailwind CSS
         </span> 
            <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/redux.png" alt="Redux" className="w-5 h-5 mr-2" />
+          <img src="https://img.icons8.com/color/48/redux.png" alt="Redux" className="w-5 h-5 mr-2"  loading="lazy"/>
           Redux
         </span> <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML5" className="w-5 h-5 mr-2" />
+          <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML5" className="w-5 h-5 mr-2" loading="lazy" />
           HTML5
         </span>
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" className="w-5 h-5 mr-2" />
+          <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" className="w-5 h-5 mr-2" loading="lazy"/>
           CSS3
         </span>
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript" className="w-5 h-5 mr-2" />
+          <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript" className="w-5 h-5 mr-2" loading="lazy" />
           JavaScript
         </span>
        
      
        
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/bootstrap.png" alt="Bootstrap" className="w-5 h-5 mr-2" />
+          <img src="https://img.icons8.com/color/48/bootstrap.png" alt="Bootstrap" className="w-5 h-5 mr-2" loading="lazy" />
           Bootstrap
         </span>
        
@@ -121,19 +125,19 @@ useEffect(() => {
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Dev Tools & Animation</h3>
       <div className="flex flex-wrap justify-center gap-4">
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/git.png" alt="Git" className="w-5 h-5 mr-2" />
+          <img src="https://img.icons8.com/color/48/git.png" alt="Git" className="w-5 h-5 mr-2" loading="lazy"/>
           Git
         </span>
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" className="w-5 h-5 mr-2 invert" />
+          <img src="https://img.icons8.com/ios-filled/50/github.png" alt="GitHub" className="w-5 h-5 mr-2 invert" loading="lazy"/>
           GitHub
         </span>
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://tsh.io/wp-content/uploads/fly-images/32664/framer-motion-logo-1-312x211.png" alt="Framer Motion" className="w-5 h-5 mr-2" />
+          <img loading="lazy" src="https://tsh.io/wp-content/uploads/fly-images/32664/framer-motion-logo-1-312x211.png" alt="Framer Motion" className="w-5 h-5 mr-2" />
           Framer Motion
         </span>
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://pbs.twimg.com/profile_images/1713633504431394816/h28jJ1qM_400x400.jpg" alt="GSAP" className="w-5 h-5 mr-2" />
+          <img loading="lazy" src="https://pbs.twimg.com/profile_images/1713633504431394816/h28jJ1qM_400x400.jpg" alt="GSAP" className="w-5 h-5 mr-2" />
           GSAP
         </span>
       </div>
@@ -145,12 +149,12 @@ useEffect(() => {
         <span className="opacity-50">Backend</span> & Database</h3>
       <div className="flex flex-wrap justify-center gap-4">
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB" className="w-5 h-5 mr-2" />
+          <img loading="lazy" src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB" className="w-5 h-5 mr-2" />
           MongoDB
         </span>
        
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
-          <img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase" className="w-5 h-5 mr-2" />
+          <img loading="lazy"src="https://img.icons8.com/color/48/firebase.png" alt="Firebase" className="w-5 h-5 mr-2" />
           Firebase
         </span>
       </div>
