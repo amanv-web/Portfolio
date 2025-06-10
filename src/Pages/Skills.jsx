@@ -1,16 +1,11 @@
 import React, { useEffect } from 'react'
 import Navbar from '../components/Home/Navbar'
 import gsap from 'gsap';
-import scrollTrigger from 'gsap/ScrollTrigger';
-              import GradientText from '../components/fancy/text/GradientText'
+import GradientText from '../components/fancy/text/GradientText'
 import Svg from '@/components/Home/Svg copy 2';
 
 
 function Skills() {
-
- 
-
-
  
 useEffect(() => {
   gsap.fromTo(

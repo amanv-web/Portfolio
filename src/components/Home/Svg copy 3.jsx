@@ -6,7 +6,7 @@ function Svg() {
         <motion.div
           className="relative">
             <motion.div
-              className=" absolute md:left-100 md:-top-10"
+              className=" absolute  md:-top-10 "
               initial={{ x: -200, opacity: 0 }}
               animate={{  }}
               whileInView={{x: 0, opacity: 1}}
