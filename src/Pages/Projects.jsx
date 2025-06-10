@@ -31,14 +31,13 @@ function Projects() {
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            initial={{ opacity: 0, x: 300, borderRadius: "100%", scaleX: 0, scaleY:0 }}
-            whileInView={{ opacity: 1, x: 10, borderRadius: "0%", scaleX: 1 ,scaleY:1}}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-            viewport={{ once: true }}
-            whileHover={{}}
-            className="grid gap-4 mx-4 sm:grid-cols-12 py-3  p-4  bg-white/10 backdrop-blur-md border border-white/20  shadow-lg   hover:scale-105 transition-all duration-500 ease-in-out hover:border-purple-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-purple-700   "
+        initial={{ opacity: 0, x: 200, borderRadius: "30%", scale: 0 }}
+  whileInView={{ opacity: 1, x: 0, borderRadius: "0%", scale: 1 }}
+  transition={{ duration: 0.1, ease: "easeOut" }}
+  viewport={{ once: true }}
+  whileHover={{  }}
+            className="grid gap-4 mx-4 sm:grid-cols-12 py-3  p-4  bg-white/10 backdrop-blur-md border border-white/20  shadow-lg   hover:scale-105 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-sm hover:scale-[1]  hover:shadow-teal-500   "
           >
-            {/* Left Side - Title + Image */}
             <div className="col-span-12 sm:col-span-3">
               <div className=" p-4 text-center sm:text-left mb-1 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-[#00FFFF] ">
                 <a

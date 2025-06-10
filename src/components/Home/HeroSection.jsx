@@ -44,7 +44,7 @@ function HeroSection() {
           <div className="flex space-x-4 pt-5 md:pl-0  pl-10 ">
             <a
               href="mailto:getintouch.amanv@hotmail.com"
-              className="  bg-gradient-to-r from-teal-400 
+              className="  bg-gradient-to-r from-teal-400 to-blue-900
               text-white
               font-semibold
               py-3 px-6
@@ -54,10 +54,11 @@ function HeroSection() {
               duration-900
               ease-in-out
               hover:from-black
-              hover:to-blue-600
+              hover:to-blue-900
               hover:shadow-blue-400
-              focus:outline-none
-              focus:ring-4 focus:ring-blue-400  "
+            focus:outline-none
+
+              focus:ring-blue-400  "
             >
               Hire Me
             </a>
@@ -66,8 +67,7 @@ function HeroSection() {
               href="https://drive.google.com/file/d/1IT9hdTzZoitMdERo00eBZ0ivMR3fpUJN/view?usp=sharing"
             >
               <button
-                className=" bg-gradient-to-r from-teal-400 
-            text-white 
+      className="  bg-gradient-to-r from-teal-400 to-blue-900            text-white 
             font-semibold
             py-3 px-6
             rounded-full
@@ -76,10 +76,10 @@ function HeroSection() {
             duration-900
             ease-in-out
             hover:from-black
-            hover:to-blue-600
+            hover:to-blue-900
             hover:shadow-blue-400
             focus:outline-none
-            focus:ring-4 focus:ring-blue-400  "
+            focus:ring-blue-400  "
               >
                 View Resume
               </button>

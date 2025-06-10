@@ -6,7 +6,7 @@ function Svg() {
         <motion.div
           className="">
             <motion.div
-              className=" absolute h-screen md:left-100 md:-top-90"
+              className=" absolute h-screen md:left-100 md:-top-90 -z-10"
               initial={{ x: -200, opacity: 0 , y:300}}
               animate={{  }}
               whileInView={{x: 0, opacity: 1 , y:0}}

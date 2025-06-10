@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "atropos/css";
 import Atropos from "atropos/react";
 import GradientText from "../components/fancy/text/GradientText";
-import Svg from "@/components/Home/Svg copy";
 function About() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -42,7 +41,7 @@ function About() {
   return (
     <>
       <Navbar />
-      <Svg />
+
       <div className="md:h-screen mt-10 flex justify-around wrap text-white overflow-hidden flex-wrap-reverse md:flex-nowrap">
         <div className="mt-14 p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center ">
           <Atropos className="my-atropos">

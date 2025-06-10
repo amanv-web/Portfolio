@@ -82,7 +82,7 @@ useEffect(() => {
   
 
 
-    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all w-full duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700"
+    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all w-full duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-teal-700"
 >
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Frontend Development</h3>
       <div className="flex flex-wrap justify-center gap-4">
