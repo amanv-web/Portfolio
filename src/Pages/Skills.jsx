@@ -24,8 +24,35 @@ useEffect(() => {
         start: "top 20%",
         end: "top 20%",
         scrub: true,
-        // Optional:
-        markers: true,
+
+      },
+    }
+  ); gsap.fromTo(
+    ".movimg2",
+    { opacity: 1, scale: 1 },
+    {
+      opacity: 0.5,
+      scale: 0.8,
+      scrollTrigger: {
+        trigger: ".movimg2",
+        start: "top 20%",
+        end: "top 20%",
+        scrub: true,
+
+      },
+    }
+  ); gsap.fromTo(
+    ".movimg3",
+    { opacity: 1, scale: 1 },
+    {
+      opacity: 0.5,
+      scale: 0.8,
+      scrollTrigger: {
+        trigger: ".movimg3",
+        start: "top 20%",
+        end: "top 20%",
+        scrub: true,
+
       },
     }
   );
@@ -36,7 +63,7 @@ useEffect(() => {
 
       <Navbar />
       <Svg/>
-      <div className='pb-20'>
+      <div className='pb-20 pt-20'>
         <div>
          <GradientText
            colors={["#40ffaa", "#4079ff", "#40ffaa",  "#40ffaa"]}
@@ -47,16 +74,16 @@ useEffect(() => {
                <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">Skills</h1>
          </GradientText>
         </div>
-      <div id="skills" className="py-10  text-center text-white">
-          <p className="text-center   text-lg text-gray-300 ">
+      <div id="skills" className="py-10  text-center text-white h-screen">
+          <p className="text-center px-2  text-lg text-gray-300 ">
       Over the years, I’ve explored and built amazing things using these technologies.
     </p>
-  <div className="max-w-6xl h-96 mx-auto flex p-8 space-x-8">
+  <div className="max-w-6xl h-96 mx-auto grid md:flex grid-cols-1 p-8 space-x-8">
  
   
 
 
-    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700"
+    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all w-full duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700"
 >
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Frontend Development</h3>
       <div className="flex flex-wrap justify-center gap-4">
@@ -95,7 +122,7 @@ useEffect(() => {
     </div>
 
 
-    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
+    <div className="movimg2 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 w-full transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Dev Tools & Animation</h3>
       <div className="flex flex-wrap justify-center gap-4">
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
@@ -118,7 +145,7 @@ useEffect(() => {
     </div>
 
   
-    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
+    <div className="movimg3 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 w-full transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">
         <span className="opacity-50">Backend</span> & Database</h3>
       <div className="flex flex-wrap justify-center gap-4">

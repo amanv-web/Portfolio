@@ -23,24 +23,25 @@ const ProjectProvider = ({ children }) => {
         "API Integration: Consumes anime data from an external API (Context API)",
       ],
     },
-  {
-  id: 5,
-  title: "Next-Do",
-  image: "https://res.cloudinary.com/dsxq0kytm/image/upload/v1749288347/Capture_aceh7o.png",
-  link: "https://next-do.vercel.app/",
-  features: [
-    "Task Management",
-    "Real-Time Updates",
-    "Responsive Design",
-    "Authentication System",
-  ],
-  techStack: [
-    "Frontend: React, Next.js",
-    "State Management: Context API or Redux",
-    "Styling: Tailwind CSS",
-    "Authentication: Firebase Auth or similar",
-  ],
-},
+    {
+      id: 5,
+      title: "Next-Do",
+      image:
+        "https://res.cloudinary.com/dsxq0kytm/image/upload/v1749288347/Capture_aceh7o.png",
+      link: "https://next-do.vercel.app/",
+      features: [
+        "Task Management",
+        "Real-Time Updates",
+        "Responsive Design",
+        "Authentication System",
+      ],
+      techStack: [
+        "Frontend: React, Next.js",
+        "State Management: Context API or Redux",
+        "Styling: Tailwind CSS",
+        "Authentication: Firebase Auth or similar",
+      ],
+    },
     {
       id: 2,
       title: "Currency Convert",
@@ -77,28 +78,26 @@ const ProjectProvider = ({ children }) => {
         "API Integration: QR Code Generation API",
       ],
     },
-   
+
     {
-  id: 4,
-  title: "Password Generator",
-  image:
-    "https://res.cloudinary.com/dsxq0kytm/image/upload/c_crop,ar_1:1/v1744642118/Screenshot_7_a1qfes.png",
-  link: "https://random-password-generator-1rqv.vercel.app/",
-  features: [
-    "Instant Password Generation",
-    "Customizable Options",
-    "Copy to Clipboard",
-    "User-Friendly UI",
-    "Responsive Design",
-  ],
-  techStack: [
-    "Frontend: React, JavaScript, HTML, CSS",
-    "State Management: React Hooks for real-time updates",
-    "Styling: Tailwind CSS for a modern look",
-  ],
-},
-
-
+      id: 4,
+      title: "Password Generator",
+      image:
+        "https://res.cloudinary.com/dsxq0kytm/image/upload/c_crop,ar_1:1/v1744642118/Screenshot_7_a1qfes.png",
+      link: "https://random-password-generator-1rqv.vercel.app/",
+      features: [
+        "Instant Password Generation",
+        "Customizable Options",
+        "Copy to Clipboard",
+        "User-Friendly UI",
+        "Responsive Design",
+      ],
+      techStack: [
+        "Frontend: React, JavaScript, HTML, CSS",
+        "State Management: React Hooks for real-time updates",
+        "Styling: Tailwind CSS for a modern look",
+      ],
+    },
   ];
 
   return (
@@ -111,4 +110,4 @@ const ProjectProvider = ({ children }) => {
 // Custom hook to use the context
 const useProjects = () => useContext(ProjectContext);
 
-export { ProjectProvider, useProjects ,ProjectContext };
+export { ProjectProvider, useProjects, ProjectContext };

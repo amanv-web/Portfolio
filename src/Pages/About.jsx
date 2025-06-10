@@ -42,7 +42,7 @@ function About() {
   return (
     <>
       <Navbar />
-      <Svg/>
+      <Svg />
       <div className="md:h-screen flex justify-around wrap text-white overflow-hidden flex-wrap-reverse md:flex-nowrap">
         <div className=" p-10 md:p-10 md:pl-20 w-100 md:h-110 h-10/12 flex justify-center items-center ">
           <Atropos className="my-atropos">

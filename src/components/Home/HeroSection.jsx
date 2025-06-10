@@ -8,7 +8,7 @@ import Svg from "./Svg";
 function HeroSection() {
   return (
     <>
-    <Svg/>
+      <Svg />
       <div className="md:flex items-center justify-around gap-40   h-screen pb-10">
         <motion.div
           initial={{ y: "5vw", opacity: 0 }}
@@ -16,7 +16,6 @@ function HeroSection() {
           transition={{ type: "spring", duration: 2, delay: 0.5 }}
           className="md:w-2/6 w-11/12 flex flex-col justify-center items-start"
         >
-          
           <h1 className="md:text-3xl   text-xl md:p-0 pt-20 pl-10 font-bold text-[#40d6c5]">
             Hey there!, I'm-
           </h1>
@@ -29,7 +28,6 @@ function HeroSection() {
               animationSpeed={3}
               showBorder={false}
               className="custom-class"
-              
             >
               <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold ">
                 Vishwakarma
@@ -47,19 +45,19 @@ function HeroSection() {
             <a
               href="mailto:getintouch.amanv@hotmail.com"
               className="  bg-gradient-to-r from-teal-400 
-  text-white
-  font-semibold
-  py-3 px-6
-  rounded-full
-  shadow-sm
-  transition
-  duration-900
-  ease-in-out
-  hover:from-black
-  hover:to-blue-600
-  hover:shadow-blue-400
-  focus:outline-none
-  focus:ring-4 focus:ring-blue-400  "
+              text-white
+              font-semibold
+              py-3 px-6
+              rounded-full
+              shadow-sm
+              transition
+              duration-900
+              ease-in-out
+              hover:from-black
+              hover:to-blue-600
+              hover:shadow-blue-400
+              focus:outline-none
+              focus:ring-4 focus:ring-blue-400  "
             >
               Hire Me
             </a>
@@ -69,19 +67,19 @@ function HeroSection() {
             >
               <button
                 className=" bg-gradient-to-r from-teal-400 
-  text-white
-  font-semibold
-  py-3 px-6
-  rounded-full
-  shadow-sm
-  transition
-  duration-900
-  ease-in-out
-  hover:from-black
-  hover:to-blue-600
-  hover:shadow-blue-400
-  focus:outline-none
-  focus:ring-4 focus:ring-blue-400  "
+            text-white 
+            font-semibold
+            py-3 px-6
+            rounded-full
+            shadow-sm
+            transition
+            duration-900
+            ease-in-out
+            hover:from-black
+            hover:to-blue-600
+            hover:shadow-blue-400
+            focus:outline-none
+            focus:ring-4 focus:ring-blue-400  "
               >
                 View Resume
               </button>
