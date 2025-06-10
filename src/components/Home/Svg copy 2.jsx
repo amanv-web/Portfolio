@@ -4,15 +4,16 @@ import { motion } from "framer-motion";
 function Svg() {
     return (
         <motion.div
-          className="">
+          className="relative">
             <motion.div
-              className=" absolute md:left-100 md:-top-10"
-              initial={{ x: -200, opacity: 0 }}
+              className=" absolute md:left-0 "
+              initial={{ x: 200, opacity: 0 ,y:100 }}
               animate={{  }}
-              whileInView={{x: 0, opacity: 1}}
+              whileInView={{x: 0, opacity: 1,y:0}}
               transition={{ type: "spring", stiffness: 60, damping: 20 }}
             >
-           <svg id="visual" viewBox="0 0 960 540"      className="w-100 h-250 md:w-220 md:h-250 overflow-x-hidden" 
+           <svg id="visual" viewBox="0 0 960 540"     
+            className="w-100 h-250 md:w-220 md:h-150 overflow-x-hidden" 
 
           preserveAspectRatio="xMidYMid meet"
           xmlns="http://www.w3.org/2000/svg"

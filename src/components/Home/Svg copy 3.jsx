@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Svg() {
     return (
         <motion.div
-          className="">
+          className="relative">
             <motion.div
               className=" absolute md:left-100 md:-top-10"
               initial={{ x: -200, opacity: 0 }}

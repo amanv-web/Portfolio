@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 function Svg() {
     return (
         <motion.div
-          className="">
+          className="relative">
             <motion.div
-              className=" absolute md:left-100 md:-top-10"
-              initial={{ x: -200, opacity: 0 }}
+              className=" absolute h-screen md:left-100 md:-top-30"
+                initial={{ x: -200, opacity: 0 }}
               animate={{  }}
               whileInView={{x: 0, opacity: 1}}
               transition={{ type: "spring", stiffness: 60, damping: 20 }}
