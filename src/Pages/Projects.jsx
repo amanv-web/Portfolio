@@ -23,7 +23,7 @@ function Projects() {
             showBorder={false}
             className="custom-class"
           >
-            <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">
+            <h1 className="md:text-8xl text-6xl font-extrabold text-center pb-10 md:text-left">
               Projects
             </h1>
           </GradientText>
