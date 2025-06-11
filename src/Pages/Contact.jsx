@@ -28,45 +28,41 @@ function Contact() {
             open. Whether you have a question or just want to say hi, I'll try
             my best to get back to you!
           </p>
-          <div>
-            <div
-              className=" flex
-         justify-around pt-7 gap-1"
-            >
-<a
-  href="https://www.linkedin.com/in/aman-vishwakarma-81a094356"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-5 py-3 text-white font-semibold rounded-full shadow-sm text- transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
->
-    <FaLinkedin className="text-xl" />
-    LinkedIn
-</a>
+          <div >
+            <div className=" flex flex-col  place-self-center pt-7 gap-4 text-center object-center">
+              <a
+                href="https://www.linkedin.com/in/aman-vishwakarma-81a094356"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-10 py-4 text-white font-semibold rounded-full shadow-sm text- transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400  "
+              >
+                <FaLinkedin className="text-xl" />
+                LinkedIn
+              </a>
 
-<a
-  href="mailto:getintouch.amanv@hotmail.com"
-  className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-5 py-2 text-white font-semibold rounded-full shadow-sm text- transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
->
-    <MdEmail className="text-xl" />
-    Email
-  
-</a>
+              <a
+                href="mailto:getintouch.amanv@hotmail.com"
+                className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-10 py-4 text-white font-semibold rounded-full shadow-sm text- transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              >
+                <MdEmail className="text-xl" />
+                Email
+              </a>
 
-             <a
-  href="https://github.com/amanv-web"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-5 py-2 text-white font-semibold rounded-full shadow-sm transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
->
-  <FaGithubSquare className="text-xl" />
-  GitHub
-</a>
+              <a
+                href="https://github.com/amanv-web"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-10 py-4 text-white font-semibold rounded-full shadow-sm transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              >
+                <FaGithubSquare className="text-xl" />
+                GitHub
+              </a>
             </div>
           </div>
         </div>
       </div>
     </>
-  ); 
+  );
 }
 
 export default Contact;

@@ -10,7 +10,7 @@ function Navbar() {
   to="/"
   className={({ isActive }) =>
     isActive
-      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r  from-teal-800 to-blue-700 rounded-3xl px-3 '
+      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r from-teal-400 to-blue-900 rounded-3xl px-3 '
       : 'text-lg  transition-all text-gray-500 hover:text-[#00FFFF] p-1' 
       
   }
@@ -22,7 +22,7 @@ function Navbar() {
   to="/about"
   className={({ isActive }) =>
     isActive
-      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r  from-teal-800 to-blue-700 rounded-3xl px-3 '
+      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r from-teal-400 to-blue-900 rounded-3xl px-3 '
       : 'text-lg  transition-all text-gray-500 hover:text-[#00FFFF] py-1'   }
 >
   About
@@ -32,7 +32,7 @@ function Navbar() {
   to="/skills"
   className={({ isActive }) =>
     isActive
-      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r  from-teal-800 to-blue-700 rounded-3xl px-3 '
+      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r from-teal-400 to-blue-900 rounded-3xl px-3 '
       : 'text-lg  transition-all text-gray-500 hover:text-[#00FFFF] py-1'   }
 >
   Skills
@@ -42,7 +42,7 @@ function Navbar() {
   to="/projects"
   className={({ isActive }) =>
     isActive
-      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r  from-teal-800 to-blue-700 rounded-3xl px-3 '
+      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r from-teal-400 to-blue-900 rounded-3xl px-3 '
       : 'text-lg  transition-all text-gray-500 hover:text-[#00FFFF] py-1'   }
 >
   Projects
@@ -52,7 +52,7 @@ function Navbar() {
   to="/contact"
   className={({ isActive }) =>
     isActive
-      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r  from-teal-800 to-blue-700 rounded-3xl px-3 '
+      ? 'text-lg p-1 transition-all text-[#ffffff] bg-gradient-to-r from-teal-400 to-blue-900  rounded-3xl px-3 '
       : 'text-lg  transition-all text-gray-500 hover:text-[#00FFFF] py-1'   }
 >
   Contact

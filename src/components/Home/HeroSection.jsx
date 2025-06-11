@@ -8,17 +8,17 @@ function HeroSection() {
   return (
     <>
       <Svg />
-      <div className="md:flex items-center justify-around gap-40 md:pl-10   h-screen pb-10">
+      <div className="md:flex items-center justify-between px-40 pl-25  h-screen pb-10">
         <motion.div
           initial={{ y: "5vw", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", duration: 1, delay: 0.3 }}
-          className="md:w-2/6 w-11/12 flex flex-col justify-center items-start"
+          className="md:w-/12 w-11/12 flex flex-col justify-center items-start"
         >
+          <div>
           <h1 className="md:text-3xl   text-xl md:p-0 pt-16 pl-10 font-bold text-[#40d6c5]">
             Hey there!, I'm-
           </h1>
-          <div>
             <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold">
               Aman{" "}
             </h1>
@@ -34,12 +34,16 @@ function HeroSection() {
             </GradientText>
 
             <Typewriter />
-          </div>
-          <div>
-            <p className="text-md md:pl-0  pl-10 flex pt-5 f">
+                <p className="text-md md:pl-0  pl-10 flex pt-5 f">
               Currently focused on building user experiences that drive growth.
             </p>
+        
           </div>
+         
+        
+        
+        
+        
           <div className="flex space-x-4 pt-5 md:pl-0  pl-10 ">
             <a
               href="mailto:getintouch.amanv@hotmail.com"
@@ -56,7 +60,6 @@ function HeroSection() {
               hover:to-blue-900
               hover:shadow-blue-400
             focus:outline-none
-
               focus:ring-blue-400  "
             >
               Hire Me
@@ -66,7 +69,7 @@ function HeroSection() {
               href="https://drive.google.com/file/d/1IT9hdTzZoitMdERo00eBZ0ivMR3fpUJN/view?usp=sharing"
             >
               <button
-                className="  bg-gradient-to-r from-teal-400 to-blue-900            text-white 
+                className="  bg-gradient-to-r from-teal-400 to-blue-900   text-white 
             font-semibold
             py-3 px-6
             rounded-full
@@ -86,7 +89,7 @@ function HeroSection() {
           </div>
         </motion.div>
 
-        <div className="md:pl-0   md:pt-0 pt-10 sm:max-w-full flex justify-center items-center">
+        <div className="md:pl-0    md:pt-0 pt-10 sm:max-w-full ">
           <motion.img
             initial={{ y: 100, opacity: 0 }}
             whileHover={{ scale: 0.9 }}
@@ -97,9 +100,9 @@ function HeroSection() {
               delay:0.6
             }}
             whileInView={{ y: 0, opacity: 1 }}
-            className=" overflow-hidden rounded-full 
+            className=" overflow-hidden rounded-full w-100  
              "
-            src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1749622833/Untitled_design-removebg-preview_nawuja.png"
+            src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1749669820/Picsart_25-06-12_00-51-44-192_iaq6sc.png"
             alt="Profile"
           />
         </div>
