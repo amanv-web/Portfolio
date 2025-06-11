@@ -8,7 +8,7 @@ function HeroSection() {
   return (
     <>
       <Svg />
-      <div className="md:flex items-center justify-between px-40 pl-25  h-screen pb-10">
+      <div className="md:flex items-center justify-between md:px-40 md:pl-25  h-screen pb-10">
         <motion.div
           initial={{ y: "5vw", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -89,7 +89,7 @@ function HeroSection() {
           </div>
         </motion.div>
 
-        <div className="md:pl-0    md:pt-0 pt-10 sm:max-w-full ">
+        <div className="md:pl-0    md:pt-0 pt-10 sm:max-w-full  flex justify-center ">
           <motion.img
             initial={{ y: 100, opacity: 0 }}
             whileHover={{ scale: 0.9 }}
@@ -100,9 +100,9 @@ function HeroSection() {
               delay:0.6
             }}
             whileInView={{ y: 0, opacity: 1 }}
-            className=" overflow-hidden rounded-full w-100  
+            className=" overflow-hidden rounded-full md:w-100 w-60 max-h-auto mask-bg-black
              "
-            src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1749669820/Picsart_25-06-12_00-51-44-192_iaq6sc.png"
+            src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1749675675/Picsart_25-06-12_02-15-44-501_1_acx66e-removebg-preview-removebg-preview_hn4gmo.png"
             alt="Profile"
           />
         </div>
