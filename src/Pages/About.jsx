@@ -1,13 +1,67 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useRef, useState } from "react";
 import Navbar from "../components/Home/Navbar";
-import { motion } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "atropos/css";
 import Atropos from "atropos/react";
 import GradientText from "../components/fancy/text/GradientText";
+import TextHighlighter from "../components/fancy/text/text-highlighter";
+import Lenis from "lenis"
 
 function About() {
+  const containerRef = useRef(null);
+  const elementRef = useRef(null);
+  const [isHighlighted, setIsHighlighted] = useState(false);
+
+  const highlightClass = "rounded-[0.3em] px-2 text-black ";
+  const highlightColor = "#45fbb0";
+  const inViewOptions = {
+    threshold: 0.9,
+  };
+  const transition = { type: "spring", duration: 1, bounce: 0 }
+ 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsHighlighted(entry.isIntersecting);
+      },
+      inViewOptions
+    );
+
+    if (elementRef.current) observer.observe(elementRef.current);
+
+    return () => {
+      if (elementRef.current) observer.unobserve(elementRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const lenis = new Lenis({
+      autoRaf: true,
+      wrapper: containerRef.current,
+      duration: 3,
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      touchMultiplier: 1,
+      delay: 5,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    return () => {
+      lenis.destroy();
+    };
+  }, []);
+
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -62,35 +116,113 @@ function About() {
             </h1>
           </GradientText>
 
-          <motion.p
+          <div
             className="md:text-lg text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full text-justify"
-            initial={{ opacity: 0, filter: "blur(5px)" }}
-            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            transition={{
-              delay: 0.3,
-              duration: 1,
-              bounce: 1,
-            }}
+           
+                    ref={containerRef}
+
           >
-            "I am Aman Vishwakarma, a passionate React Developer and tech nerd
-            from Azamgarh, India - 276201. With experience in building modern,
-            responsive web applications, I specialize in JavaScript (ES6+),
-            React v19, Redux, Context API, Tailwind CSS, and Bootstrap. I focus
-            on delivering seamless user experiences and optimized performance.
-            As a dedicated Freelancer, I have successfully completed multiple
-            projects, consistently exceeding client expectations with clean,
-            efficient, and scalable code. My strong problem-solving skills and
-            attention to detail allow me to tackle complex challenges, creating
-            solutions that are both innovative and practical. I take pride in
-            writing clean, maintainable code and continuously improving my
-            skills to stay updated with the latest industry trends. Beyond
-            coding, I enjoy exploring new technologies, collaborating with
-            fellow developers, and contributing to projects that push the
-            boundaries of web development. I believe that great digital
-            experiences are built on both creativity and technical excellence,
-            and I strive to combine these elements in every project I
-            undertake."
-          </motion.p>
+         <p>
+  I'm Aman Vishwakarma, a passionate{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    Front-End Developer & Tech Enthusiast
+  </TextHighlighter>{" "}
+  from Azamgarh, India. I specialize in building{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    modern, responsive web applications
+  </TextHighlighter>
+  {" "}with a strong focus on clean design and optimized performance.
+</p>
+
+<p>
+  With hands-on experience in{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    JavaScript (ES6+), React v19, Tailwind CSS,
+  </TextHighlighter>{" "}
+  Redux, Context API, and Bootstrap, I deliver code that is{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    scalable, efficient, and maintainable.
+  </TextHighlighter>
+</p>
+
+<p>
+  I'm also proud to serve as an{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    IT Teacher (Grades 6–10)
+  </TextHighlighter>{" "}
+  at a CBSE-affiliated school, where I help young minds explore the world of coding and technology.
+</p>
+
+<p>
+  As a dedicated{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    Freelancer
+  </TextHighlighter>
+  , I've consistently exceeded client expectations by creating high-quality web experiences. I bring a{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    problem-solving mindset and strong attention to detail
+  </TextHighlighter>{" "}
+  to every project I undertake.
+</p>
+
+<p>
+  Beyond coding, I enjoy{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    exploring new technologies, collaborating with developers,
+  </TextHighlighter>{" "}
+  and contributing to innovative solutions. I believe{" "}
+  <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+    great digital experiences blend creativity and technical excellence
+  </TextHighlighter>
+  , and I strive to bring both to every line of code I write.
+</p>
+
+          </div>
         </div>
       </div>
     </>
