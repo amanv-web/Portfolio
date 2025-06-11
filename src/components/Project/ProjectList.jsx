@@ -12,15 +12,48 @@ const ProjectProvider = ({ children }) => {
       link: "https://anime-stickers.vercel.app/",
       features: [
         "Anime Discovery",
-        "Advanced Search & Filters",
+        "Advanced Search & Price Filters",
         "Responsive UI",
         "Dark Mode Support",
       ],
       techStack: [
-        "Frontend: React v19, Redux, Tailwind CSS, React Router",
-        "State Management: Redux Toolkit",
-        "Styling: Tailwind CSS, AOS (for smooth animations)",
-        "API Integration: Consumes anime data from an external API (Context API)",
+     <div className="flex flex-wrap gap-1 ">
+  {/* Frontend */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img loading="lazy" src="https://img.icons8.com/color/48/react-native.png" alt="React.js" className="w-5 h-5 mr-2 rounded-full" />
+    React v19
+  </span>
+
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img loading="lazy" src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS" className="w-5 h-5 mr-2 rounded-full" />
+    Tailwind CSS
+  </span>
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img loading="lazy" src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-react-router-a-collection-of-navigational-components-that-compose-declaratively-logo-color-tal-revivo.png" alt="React Router" className="w-5 h-5 mr-2 rounded-full" />
+    React Router
+  </span>
+
+  {/* State Management */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img loading="lazy" src="https://img.icons8.com/color/48/redux.png" alt="Redux Toolkit" className="w-5 h-5 mr-2 rounded-full" />
+    Redux Toolkit
+  </span>
+
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="AOS Animation" className="w-5 h-5 mr-2 rounded-full" />
+    AOS Animation
+  </span>
+
+  {/* API Integration */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img loading="lazy" src="https://img.icons8.com/fluency/48/api-settings.png" alt="Context API" className="w-5 h-5 mr-2 rounded-full" />
+    Context API 
+  </span>
+</div>
+
       ],
     },
     {
@@ -36,10 +69,37 @@ const ProjectProvider = ({ children }) => {
         "Authentication System",
       ],
       techStack: [
-        "Frontend: React, Next.js",
-        "State Management: Context API or Redux",
-        "Styling: Tailwind CSS",
-        "Authentication: Firebase Auth or similar",
+       <div className="flex flex-wrap gap-1">
+  {/* Frontend */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/react-native.png" alt="React" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    React
+  </span>
+
+  {/* State Management */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/redux.png" alt="Redux" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    Redux
+  </span>
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/fluency/48/api-settings.png" alt="Context API" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    Context API
+  </span>
+
+  {/* Styling */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/tailwind_css.png" alt="Tailwind CSS" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    Tailwind CSS
+  </span>
+
+  {/* Authentication */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    Firebase Auth
+  </span>
+</div>
+
       ],
     },
     {
@@ -52,13 +112,40 @@ const ProjectProvider = ({ children }) => {
         "Live Exchange Rates",
         "Multi-Currency Support",
         "User-Friendly UI",
-        "Responsive Design",
         "Instant Calculations",
       ],
       techStack: [
-        "Frontend: React, JavaScript, HTML, CSS",
-        "API Integration: Exchange rate API for real-time currency data",
-        "Styling: Tailwind CSS for a sleek and modern UI",
+       <div className="flex flex-wrap gap-1">
+  {/* Frontend */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/react-native.png" alt="React" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    React
+  </span>
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    JavaScript
+  </span>
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    HTML
+  </span>
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/css3.png" alt="CSS" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    CSS
+  </span>
+
+  {/* API Integration */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/fluency/48/api-settings.png" alt="API" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    Exchange Rate API
+  </span>
+
+
+</div>
+
       ],
     },
 
@@ -74,30 +161,35 @@ const ProjectProvider = ({ children }) => {
         "Responsive Design",
       ],
       techStack: [
-        "Frontend: React, JavaScript, HTML, CSS",
-        "API Integration: QR Code Generation API",
+       <div className="flex flex-wrap gap-1">
+  {/* Frontend */}
+
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="JavaScript" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    JavaScript
+  </span>
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    HTML
+  </span>
+
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/color/48/css3.png" alt="CSS" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    CSS
+  </span>
+
+  {/* API Integration */}
+  <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
+    <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/external-qr-code-web-and-seo-flatart-icons-flat-flatarticons.png" alt="QR API" className="w-5 h-5 mr-2 rounded-full" loading="lazy" />
+    QR Code API
+  </span>
+</div>
+
       ],
     },
 
-    {
-      id: 4,
-      title: "Password Generator",
-      image:
-        "https://res.cloudinary.com/dsxq0kytm/image/upload/c_crop,ar_1:1/v1744642118/Screenshot_7_a1qfes.png",
-      link: "https://random-password-generator-1rqv.vercel.app/",
-      features: [
-        "Instant Password Generation",
-        "Customizable Options",
-        "Copy to Clipboard",
-        "User-Friendly UI",
-        "Responsive Design",
-      ],
-      techStack: [
-        "Frontend: React, JavaScript, HTML, CSS",
-        "State Management: React Hooks for real-time updates",
-        "Styling: Tailwind CSS for a modern look",
-      ],
-    },
   ];
 
   return (

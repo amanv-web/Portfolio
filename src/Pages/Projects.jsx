@@ -2,10 +2,9 @@ import React from "react";
 import Navbar from "../components/Home/Navbar";
 import { motion } from "framer-motion";
 import GradientText from "../components/fancy/text/GradientText";
-
 import { useContext } from "react";
 import { ProjectContext } from "../components/Project/ProjectList";
-import Svg from "@/components/Home/Svg copy 3";
+
 
 function Projects() {
   const { projects } = useContext(ProjectContext);
@@ -13,9 +12,7 @@ function Projects() {
   return (
     <>
   
-      <div className=" my div max-w-5xl md:px-4 md:py-12 mx-auto space-y-5  ">
-
-
+      <div className=" my div max-w-5xl p-2 md:px-4 md:py-12 mx-auto space-y-5  ">
         <div>
           <GradientText
             colors={["#40ffaa", "#4079ff", "#40ffaa", "#40ffaa"]}
@@ -36,7 +33,7 @@ function Projects() {
         transition={{  }}
        viewport={{ once: true }}
        whileHover={{  }}
-             className="grid rounded-xl gap-4 mx-4 sm:grid-cols-12 py-3  p-4  bg-white/10 backdrop-blur-md border border-white/20  shadow-lg   hover:scale-105 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-sm hover:scale-[1]  hover:shadow-teal-500   "
+             className="grid rounded-xl gap-4 mx-4 sm:grid-cols-12 py-3  p-4  bg-white/10 backdrop-blur-md border border-white/20  shadow-lg hover:scale-105 transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-sm hover:scale-[1]  hover:shadow-teal-500"
           >
             <div className="col-span-12 sm:col-span-3">
               <div className=" p-4 text-center sm:text-left mb-1 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-[#00FFFF] ">
@@ -73,13 +70,13 @@ function Projects() {
 
                 {/* Tech Stack */}
                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-[#00FFFF]">
-                  <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF]">
+                  <h3 className="text-xl font-semibold tracking-wide text-[#00FFFF] pb-2">
                     Tech Stack:
                   </h3>
                   {project.techStack.map((tech, i) => (
-                    <li className="text-md font-light" key={i}>
+                    <p className="text-sm font-light -pb-2" key={i}>
                       {tech}
-                    </li>
+                    </p>
                   ))}
                 </div>
               </div>

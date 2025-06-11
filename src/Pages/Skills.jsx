@@ -6,10 +6,6 @@ import Svg from '../components/Home/Svg copy 3';
 
 
 function Skills() {
-
- 
-
-
  
 useEffect(() => {
   gsap.fromTo(
@@ -61,7 +57,7 @@ useEffect(() => {
     <>
 
   
-      <Svg/>
+
       <div className='pb-20 pt-20'>
         <div>
          <GradientText
