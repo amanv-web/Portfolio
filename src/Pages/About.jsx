@@ -13,12 +13,12 @@ function About() {
   const elementRef = useRef(null);
   const [isHighlighted, setIsHighlighted] = useState(false);
 
-  const highlightClass = "rounded-[0.3em] px-2 text-black ";
-  const highlightColor = "#aef3fc";
+  const highlightClass = "rounded-[0.3em] px-2 text-white ";
+  const highlightColor = "#868686";
   const inViewOptions = {
-    threshold: 0.9,
+    threshold: 1,
   };
-  const transition = { type: "spring", duration: 1, bounce: 0 }
+  const transition = { type: "spring", duration: 1, bounce: 0, delay:0.5 }
  
   useEffect(() => {
     const observer = new IntersectionObserver(
