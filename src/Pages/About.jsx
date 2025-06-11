@@ -14,7 +14,7 @@ function About() {
   const [isHighlighted, setIsHighlighted] = useState(false);
 
   const highlightClass = "rounded-[0.3em] px-2 text-black ";
-  const highlightColor = "#45fbb0";
+  const highlightColor = "#aef3fc";
   const inViewOptions = {
     threshold: 0.9,
   };
@@ -211,14 +211,15 @@ function About() {
     exploring new technologies, collaborating with developers,
   </TextHighlighter>{" "}
   and contributing to innovative solutions. I believe{" "}
-  <TextHighlighter
+    great digital experiences 
+    <TextHighlighter
     className={highlightClass}
     transition={transition}
     highlightColor={highlightColor}
     useInViewOptions={inViewOptions}
   >
-    great digital experiences blend creativity and technical excellence
-  </TextHighlighter>
+    blend creativity and technical excellence
+  </TextHighlighter>{" "}a
   , and I strive to bring both to every line of code I write.
 </p>
 
