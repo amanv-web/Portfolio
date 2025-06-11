@@ -10,9 +10,8 @@ import Svg from "@/components/Home/Svg copy 2";
 function Contact() {
   return (
     <>
-      <Navbar />
       <Svg />
-      <div className="flex justify-center items-center h-screen md:pb-40 ">
+      <div className="flex justify-center items-center h-screen ">
         <div className=" md:w-1/2 md:p-10 p-10 ">
           <GradientText
             colors={["#40ffaa", "#4079ff", "#40ffaa", "#40ffaa"]}
@@ -32,44 +31,42 @@ function Contact() {
           <div>
             <div
               className=" flex
-         justify-around pt-7 gap-5"
+         justify-around pt-7 gap-1"
             >
-              <a
-                href="http://www.linkedin.com/in/aman-vishwakarma-81a094356"
-                className="w-full relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black"
-              >
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00FFFF_0%,#1E1E1E_50%,#00FFFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-md text-sm font-medium text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-0.5 ">
-                  <FaLinkedin /> Linked In
-                </span>
-              </a>
+<a
+  href="https://www.linkedin.com/in/aman-vishwakarma-81a094356"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-5 py-3 text-white font-semibold rounded-full shadow-sm text- transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+>
+    <FaLinkedin className="text-xl" />
+    LinkedIn
+</a>
 
-              <a
-                href="mailto:getintouch.amanv@hotmail.com"
-                className="w-full relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black"
-              >
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00FFFF_0%,#1E1E1E_50%,#00FFFF_100%)] " />
+<a
+  href="mailto:getintouch.amanv@hotmail.com"
+  className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-5 py-2 text-white font-semibold rounded-full shadow-sm text- transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+>
+    <MdEmail className="text-xl" />
+    Email
+  
+</a>
 
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-1xl text-sm font-medium text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-0.5">
-                  <MdEmail /> Email
-                </span>
-              </a>
-
-              <a
-                href="https://github.com/amanv-web"
-                className="w-full relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-black"
-              >
-                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#00FFFF_0%,#1E1E1E_50%,#00FFFF_100%)]" />
-                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-[#1E1E1E] px-3 py-1 md:text-md text-sm font-medium  text-[#00FFFF] backdrop-blur-3xl md:gap-3.5 gap-0.5">
-                  <FaGithubSquare /> Github
-                </span>
-              </a>
+             <a
+  href="https://github.com/amanv-web"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-5 py-2 text-white font-semibold rounded-full shadow-sm transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
+>
+  <FaGithubSquare className="text-xl" />
+  GitHub
+</a>
             </div>
           </div>
         </div>
       </div>
     </>
-  );
+  ); 
 }
 
 export default Contact;

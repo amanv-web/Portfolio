@@ -6,10 +6,13 @@ import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import Skills from "./Pages/Skills";
 import SmoothScroll from "./components/features/smoothScroll";
+import Navbar from "./components/Home/Navbar";
 function App() {
   SmoothScroll();
   return (
+
     <Router>
+        <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

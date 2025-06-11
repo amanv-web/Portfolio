@@ -7,7 +7,10 @@ import Skills from "./Skills";
 import { motion } from "framer-motion";
 function Home() {
   return (
-    <div className="\">
+
+    <>
+
+    <div className="">
   
 
       <motion.img
@@ -15,13 +18,13 @@ function Home() {
         animate={{ x: 20 }}
         transition={{
           duration: 1,
-          delay: 0,
+          delay: 0.2,
         }}
         className=" absolute md:top-15 top-5  md:left-14 w-35 h-35 -z-1 brightness-50"
         alt=""
       />
       <div className="relative">
-
+   
         <HeroSection />
         <About />
         <Skills />
@@ -29,6 +32,9 @@ function Home() {
         <Contact />
       </div>
     </div>
+    
+    </>
+   
   );
 }
 export default Home;

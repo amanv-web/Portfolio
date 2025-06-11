@@ -6,9 +6,9 @@ import TextRotate from "../fancy/text/text-rotate";
 
 export default function Preview() {
   return (
-    <div className=" text-2xl sm:text-3xl md:text-5xl flex flex-row items-center   dark:text-muted text-foreground  overflow-hidden  ">
+    <div className=" text-2xl sm:text-3xl md:text-5xl flex flex-row items-center md:pl-0  pl-10  dark:text-muted text-foreground  overflow-hidden  ">
       <LayoutGroup>
-        <motion.p className="flex sm:px-0 px-10" layout>
+        <motion.p className="flex  " layout>
           <motion.span
             className="pt-0.5 sm:pt-1 md:pt-2 text-white"
             layout
@@ -19,7 +19,7 @@ export default function Preview() {
           <TextRotate
             texts={[
               "Web developer",
-              "Software developer",
+              "Frontend developer",
             ]}
             mainClassName="text-white px-2 sm:px-2 md:px-3 text-[#49e3da] overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
             staggerFrom={"last"}

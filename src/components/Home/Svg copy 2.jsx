@@ -6,7 +6,7 @@ function Svg() {
         <motion.div
           className="relative">
             <motion.div
-              className=" absolute md:top-10 top-10 blur-xs"
+              className=" absolute -z-10 md:top-10 top-10 blur-xs"
   initial={{ x: -200, opacity: 0 , y:300}}
               animate={{  }}
               whileInView={{x: 0, opacity: 1 , y:0}}

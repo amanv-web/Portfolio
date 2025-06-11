@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Navbar from '../components/Home/Navbar'
 import gsap from 'gsap';
           import GradientText from '../components/fancy/text/GradientText'
-import Svg from '@/components/Home/Svg copy 2';
+import Svg from '../components/Home/Svg copy 3';
 
 
 function Skills() {
@@ -20,8 +20,8 @@ useEffect(() => {
       scale: 0.8,
       scrollTrigger: {
         trigger: ".movimg1",
-        start: "top 20%",
-        end: "top 20%",
+            start: "top 10%",
+        end: "top 10%",
         scrub: true,
 
       },
@@ -34,8 +34,8 @@ useEffect(() => {
       scale: 0.8,
       scrollTrigger: {
         trigger: ".movimg2",
-        start: "top 20%",
-        end: "top 20%",
+            start: "top 10%",
+        end: "top 10%",
         scrub: true,
 
       },
@@ -48,8 +48,8 @@ useEffect(() => {
       scale: 0.8,
       scrollTrigger: {
         trigger: ".movimg3",
-        start: "top 20%",
-        end: "top 20%",
+        start: "top 10%",
+        end: "top 10%",
         scrub: true,
 
       },
@@ -60,7 +60,7 @@ useEffect(() => {
   return (
     <>
 
-      <Navbar />
+  
       <Svg/>
       <div className='pb-20 pt-20'>
         <div>
@@ -82,7 +82,7 @@ useEffect(() => {
   
 
 
-    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all w-full duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-teal-700"
+    <div className="movimg1 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all w-full duration-500 ease-in-out hover:border-teal-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700"
 >
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Frontend Development</h3>
       <div className="flex flex-wrap justify-center gap-4">
@@ -121,7 +121,7 @@ useEffect(() => {
     </div>
 
 
-    <div className="movimg2 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 w-full transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
+    <div className="movimg2 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all w-full duration-500 ease-in-out hover:border-teal-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">Dev Tools & Animation</h3>
       <div className="flex flex-wrap justify-center gap-4">
         <span className="inline-flex items-center px-4 py-2 rounded-full bg-black text-sm font-medium text-white shadow-md hover:bg-[#2ab2fe] transition">
@@ -144,7 +144,7 @@ useEffect(() => {
     </div>
 
   
-    <div className="movimg3 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 w-full transition-all duration-500 ease-in-out hover:border-blue-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
+    <div className="movimg3 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 mb-10 transition-all w-full duration-500 ease-in-out hover:border-teal-900 hover:shadow-md hover:scale-[1.02]  hover:shadow-blue-700">
       <h3 className="text-2xl font-semibold text-center mb-4 text-white">
         <span className="opacity-50">Backend</span> & Database</h3>
       <div className="flex flex-wrap justify-center gap-4">
