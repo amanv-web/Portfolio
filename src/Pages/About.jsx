@@ -132,7 +132,18 @@ function About() {
   >
     Front-End Developer & Tech Enthusiast
   </TextHighlighter>{" "}
-  from Azamgarh, India. I specialize in building{" "}
+  from Azamgarh, India.
+           I'm currently pursuing a Bachelor of Computer Applications at 
+      
+             <TextHighlighter
+    className={highlightClass}
+    transition={transition}
+    highlightColor={highlightColor}
+    useInViewOptions={inViewOptions}
+  >
+  Chandigarh University.
+  </TextHighlighter>
+           I specialise in building{" "}
   <TextHighlighter
     className={highlightClass}
     transition={transition}
@@ -141,7 +152,7 @@ function About() {
   >
     modern, responsive web applications
   </TextHighlighter>
-  {" "}with a strong focus on clean design and optimized performance.
+  {" "}with a strong focus on clean design and optimised performance.
 </p>
 
 <p>
