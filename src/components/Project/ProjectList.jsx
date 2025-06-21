@@ -9,7 +9,7 @@ const ProjectProvider = ({ children }) => {
       title: "Anime Nexus",
       image:
         "https://res.cloudinary.com/dsxq0kytm/image/upload/v1749288764/Capture_itjfr7.png",
-      link: "https://anime-stickers.vercel.app/",
+      link: "https://anime-stickers-main.vercel.app/",
       features: [
         "Anime Discovery",
         "Advanced Search & Price Filters",
