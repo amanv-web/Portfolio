@@ -66,7 +66,7 @@ function HeroSection() {
             </a>
             <a
               rel="stylesheet"
-              href="https://drive.google.com/file/d/1IT9hdTzZoitMdERo00eBZ0ivMR3fpUJN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1aNCRFX5NMwqEV6Fr3jIF7r_YPQ0W60qu/view?usp=drive_link"
             >
               <button
                 className="  bg-gradient-to-r from-teal-400 to-blue-900   text-white 
