@@ -52,9 +52,11 @@ function Svg() {
               />
             </g>
           </g>
-        </svg>       </motion.div>
-        </motion.div>
-    );
+        </svg>
+      </motion.div>
+
+    </div>
+  );
 }
 
 export default Svg;
