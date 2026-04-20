@@ -14,7 +14,7 @@ function Home() {
   
 
       <motion.img
-        src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1744608366/Mediamodifier-Design-Template_2_j6ll17.png"
+        src="https://res.cloudinary.com/dsxq0kytm/image/upload/f_auto,q_auto,w_600/v1744608366/Mediamodifier-Design-Template_2_j6ll17.png"
         animate={{ x: 20 }}
         transition={{
           duration: 1,

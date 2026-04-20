@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../components/Home/Navbar";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+       import PillCTA from "../components/fancy/text/PillCta";
 
 import GradientText from "../components/fancy/text/GradientText";
 import Svg from "@/components/Home/Svg copy 2";
@@ -10,57 +10,77 @@ import Svg from "@/components/Home/Svg copy 2";
 function Contact() {
   return (
     <>
+      <Navbar />
       <Svg />
-      <div className="flex justify-center items-center h-screen ">
-        <div className=" md:w-1/2 md:p-10 p-10 ">
+
+      <section className="min-h-[calc(100vh-80px)] flex items-center justify-center px-4 sm:px-6 lg:px-10 py-10">
+        <div className="w-full max-w-3xl text-center">
+
+          {/* Heading */}
           <GradientText
-            colors={["#40ffaa", "#4079ff", "#40ffaa", "#40ffaa"]}
+            colors={["#40ffaa", "#4079ff", "#40ffaa"]}
             animationSpeed={3}
             showBorder={false}
-            className="custom-class"
           >
-            <h1 className="md:text-8xl text-6xl font-extrabold text-center md:text-left">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
               Get in touch
             </h1>
           </GradientText>
-          <p className="pt-4 text-center ">
-            I'm currently looking for new opportunities, my inbox is always
-            open. Whether you have a question or just want to say hi, I'll try
-            my best to get back to you!
+
+          {/* Description */}
+          <p className="pt-4 text-gray-400 text-sm sm:text-base md:text-lg max-w-xl mx-auto">
+            I'm open to new opportunities and collaborations. Whether you have a question or want to work together, feel free to reach out.
           </p>
-          <div >
-            <div className=" flex flex-col  place-self-center pt-7 gap-4 text-center object-center">
-              <a
-                href="https://www.linkedin.com/in/aman-vishwakarma-81a094356"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-10 py-4 text-white font-semibold rounded-full shadow-sm text- transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400  "
-              >
-                <FaLinkedin className="text-xl" />
-                LinkedIn
-              </a>
 
-              <a
-                href="mailto:getintouch.amanv@hotmail.com"
-                className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-10 py-4 text-white font-semibold rounded-full shadow-sm text- transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              >
-                <MdEmail className="text-xl" />
-                Email
-              </a>
+          {/* CTA */}
 
-              <a
-                href="https://github.com/amanv-web"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-gradient-to-r from-teal-400 to-blue-900 px-10 py-4 text-white font-semibold rounded-full shadow-sm transition duration-500 ease-in-out hover:from-black hover:to-blue-900 hover:shadow-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              >
-                <FaGithubSquare className="text-xl" />
-                GitHub
-              </a>
-            </div>
-          </div>
+<div className="flex flex-col sm:flex-row gap-4 pt-8 justify-center items-center">
+
+  <PillCTA
+    text={
+      <span className="flex items-center px-1 gap-2 justify-center w-full">
+        <FaLinkedin className="text-lg" />
+        LinkedIn
+      </span>
+    }
+    onClick={() =>
+      window.open(
+        "https://www.linkedin.com/in/aman-vishwakarma-81a094356",
+        "_blank"
+      )
+    }
+    className="bg-gradient-to-r  from-teal-400 to-blue-900 text-white shadow-md  h-[52px] flex-none"
+  />
+
+  <PillCTA
+    text={
+      <span className="flex items-center px-3 gap-2 justify-center w-full">
+        <MdEmail className="text-lg" />
+        Email
+      </span>
+    }
+    onClick={() =>
+      (window.location.href = "mailto:getintouch.amanv@hotmail.com")
+    }
+    className="bg-gradient-to-r from-teal-400 to-blue-900 text-white shadow-md  h-[52px] flex-none"
+  />
+
+  <PillCTA
+    text={
+      <span className="flex items-center px-2 gap-2 justify-center w-full">
+        <FaGithubSquare className="text-lg" />
+        GitHub
+      </span>
+    }
+    onClick={() =>
+      window.open("https://github.com/amanv-web", "_blank")
+    }
+    className="bg-gradient-to-r from-teal-400  to-blue-900 text-white shadow-md w-[240px] h-[52px] flex-none"
+  />
+
+</div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

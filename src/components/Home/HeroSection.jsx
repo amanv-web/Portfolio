@@ -1,111 +1,101 @@
 import React from "react";
 import { motion } from "framer-motion";
+import PillCTA from "../fancy/text/PillCta";
 import Typewriter from "./Typewriter";
-import "atropos/css";
 import GradientText from "../fancy/text/GradientText";
 import Svg from "./Svg";
+
 function HeroSection() {
   return (
     <>
       <Svg />
-      <div className="md:flex items-center justify-between md:px-40 md:pl-25  h-screen pb-10">
-        <motion.div
-          initial={{ y: "5vw", opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ type: "spring", duration: 1, delay: 0.3 }}
-          className="md:w-/12 w-11/12 flex flex-col justify-center items-start"
-        >
-          <div>
-          <h1 className="md:text-3xl   text-xl md:p-0 pt-16 pl-10 font-bold text-[#40d6c5]">
-            Hey there!, I'm-
-          </h1>
-            <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold">
-              Aman{" "}
-            </h1>
-            <GradientText
-              colors={["#40ffaa", "#4079ff", "#40ffaa", "#40ffaa"]}
-              animationSpeed={3}
-              showBorder={false}
-              className="custom-class"
-            >
-              <h1 className="md:text-8xl text-6xl  md:pl-0  pl-10 font-extrabold ">
-                Vishwakarma
-              </h1>
-            </GradientText>
 
-            <Typewriter />
-                <p className="text-md md:pl-0  pl-10 flex pt-5 f">
-              Currently focused on building user experiences that drive growth.
-            </p>
-        
-          </div>
-         
-        
-        
-        
-        
-          <div className="flex space-x-4 pt-5 md:pl-0  pl-10 ">
-            <a
-              href="mailto:getintouch.amanv@hotmail.com"
-              className="  bg-gradient-to-r from-teal-400 to-blue-900
-              text-white
-              font-semibold
-              py-3 px-6
-              rounded-full
-              shadow-sm
-              transition
-              duration-900
-              ease-in-out
-              hover:from-black
-              hover:to-blue-900
-              hover:shadow-blue-400
-            focus:outline-none
-              focus:ring-blue-400  "
-            >
-              Hire Me
-            </a>
-            <a
-              rel="stylesheet"
-              href="https://drive.google.com/file/d/1_n-5QK_S_Z9PpbXZzIrylfpeN1gxJ2Z4/view?usp=sharing"
-            >
-              <button
-                className="  bg-gradient-to-r from-teal-400 to-blue-900   text-white 
-            font-semibold
-            py-3 px-6
-            rounded-full
-            shadow-sm
-            transition
-            duration-900
-            ease-in-out
-            hover:from-black
-            hover:to-blue-900
-            hover:shadow-blue-400
-            focus:outline-none
-            focus:ring-blue-400  "
-              >
-                View Resume
-              </button>
-            </a>
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between 
+      max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 min-h-screen">
+
+        {/* LEFT */}
+        <motion.div
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-full md:w-1/2"
+        >
+          {/* Intro */}
+          <p className="text-[#40d6c5] font-semibold mb-2">
+            Hey there, I’m
+          </p>
+
+          {/* Name */}
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
+            Aman
+          </h1>
+
+          <GradientText colors={["#40ffaa", "#4079ff"]}>
+            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
+              Vishwakarma
+            </h1>
+          </GradientText>
+
+          {/* FIXED LINE */}
+          <p className="mt-4 text-lg sm:text-xl">
+            I am{" "}
+            <span className="text-[#40d6c5] font-semibold">
+              Full Stack Developer
+            </span>
+          </p>
+
+          {/* Description */}
+          <p className="mt-4 text-gray-400 max-w-md leading-relaxed text-sm sm:text-base">
+            I build fast, responsive, and user-friendly web applications using modern web technologies.
+          </p>
+
+          {/* CTA (FIXED) */}
+          <div className="flex gap-3 mt-6 flex-wrap sm:flex-nowrap">
+
+            <div className="w-full sm:w-auto">
+              <PillCTA
+                text="Hire Me"
+                onClick={() =>
+                  (window.location.href =
+                    "mailto:getintouch.amanv@hotmail.com")
+                }
+              />
+            </div>
+
+            <div className="w-full sm:w-auto">
+              <PillCTA
+                text="View Resume"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1_n-5QK_S_Z9PpbXZzIrylfpeN1gxJ2Z4/view",
+                    "_blank"
+                  )
+                }
+              />
+            </div>
+
           </div>
         </motion.div>
 
-        <div className="md:pl-0    md:pt-0 pt-10 sm:max-w-full  flex justify-center ">
-          <motion.img
-            initial={{ y: 100, opacity: 0 }}
-            whileHover={{ scale: 0.9 }}
-            transition={{
-              type: "tween",
-              ease: [0.6, -0.05, 0.01, 0.99],
-              duration: 0.8,
-              delay:0.6
-            }}
-            whileInView={{ y: 0, opacity: 1 }}
-            className=" overflow-hidden rounded-full md:w-100 w-60 max-h-auto mask-bg-black
-             "
-            src="https://res.cloudinary.com/dsxq0kytm/image/upload/v1749675675/Picsart_25-06-12_02-15-44-501_1_acx66e-removebg-preview-removebg-preview_hn4gmo.png"
-            alt="Profile"
-          />
+        {/* RIGHT IMAGE */}
+        <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+          <div className="relative group">
+            <img
+              src="https://res.cloudinary.com/dsxq0kytm/image/upload/f_auto,q_auto,w_600/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
+              alt="Aman Vishwakarma"
+              className="w-52 sm:w-64 md:w-80 rounded-xl object-cover 
+              transition duration-500 
+              group-hover:scale-105 
+              group-hover:shadow-[0_0_30px_rgba(64,214,197,0.4)]"
+              loading="lazy"
+            />
+
+            <div className="absolute inset-0 rounded-xl 
+            bg-gradient-to-r from-teal-400/10 to-blue-900/10 
+            blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          </div>
         </div>
+
       </div>
     </>
   );
