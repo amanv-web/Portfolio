@@ -1,17 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import PillCTA from "../fancy/text/PillCta";
-import Typewriter from "./Typewriter";
 import GradientText from "../fancy/text/GradientText";
 import Svg from "./Svg";
-
+import DistortImage from "../fancy/text/DistortImage";
 function HeroSection() {
   return (
     <>
-      <Svg />
+     <Svg/>
 
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between 
-      max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 min-h-screen">
+      <div
+        className="flex flex-col md:flex-row items-center 
+        justify-center md:justify-between
+        gap-10 md:gap-16
+        max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16"
+      >
 
         {/* LEFT */}
         <motion.div
@@ -20,12 +23,10 @@ function HeroSection() {
           transition={{ duration: 0.6 }}
           className="w-full md:w-1/2"
         >
-          {/* Intro */}
           <p className="text-[#40d6c5] font-semibold mb-2">
             Hey there, I’m
           </p>
 
-          {/* Name */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
             Aman
           </h1>
@@ -36,7 +37,6 @@ function HeroSection() {
             </h1>
           </GradientText>
 
-          {/* FIXED LINE */}
           <p className="mt-4 text-lg sm:text-xl">
             I am{" "}
             <span className="text-[#40d6c5] font-semibold">
@@ -44,14 +44,11 @@ function HeroSection() {
             </span>
           </p>
 
-          {/* Description */}
           <p className="mt-4 text-gray-400 max-w-md leading-relaxed text-sm sm:text-base">
             I build fast, responsive, and user-friendly web applications using modern web technologies.
           </p>
 
-          {/* CTA (FIXED) */}
           <div className="flex gap-3 mt-6 flex-wrap sm:flex-nowrap">
-
             <div className="w-full sm:w-auto">
               <PillCTA
                 text="Hire Me"
@@ -73,11 +70,11 @@ function HeroSection() {
                 }
               />
             </div>
-
           </div>
         </motion.div>
 
         {/* RIGHT IMAGE */}
+<<<<<<< HEAD
         <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
           <div className="relative group">
             <img
@@ -99,13 +96,20 @@ function HeroSection() {
               group-hover:shadow-[0_0_30px_rgba(64,214,197,0.4)]"
               loading="lazy"
             />
+=======
+     <div className="w-full md:w-1/2 flex justify-center relative z-10">
+>>>>>>> 112725e (final)
 
-            <div className="absolute inset-0 rounded-xl 
-            bg-gradient-to-r from-teal-400/10 to-blue-900/10 
-            blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
-          </div>
-        </div>
+  <div className="group">
+    
+    <DistortImage
+      image="https://res.cloudinary.com/dsxq0kytm/image/upload/v1776758613/file_00000000ac0c7208a3d9409701245160_bldiug.png"
+      maxDisplacement={40}
+    />
 
+  </div>
+
+</div>
       </div>
     </>
   );

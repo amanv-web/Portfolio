@@ -1,24 +1,17 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
-function DistortImage({
-  image,
-  baseFrequency = 0.015,
-  numOctaves = 5,
-  seed = 4,
-  maxDisplacement = 120,
-  movementBound = 40,
-}) {
-  const svgRef = useRef(null);
-  const displacementRef = useRef(null);
+function DistortImage({ image }) {
+  const imgRef = useRef(null);
 
-  const cursor = useRef({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
-  const cachedCursor = useRef({ ...cursor.current });
+  const cursor = useRef({
+    x: window.innerWidth / 2,
+    y: window.innerHeight / 2,
+  });
 
   useEffect(() => {
     const lerp = (a, b, n) => (1 - n) * a + n * b;
     const map = (x, a, b, c, d) => ((x - a) * (d - c)) / (b - a) + c;
-    const distance = (x1, x2, y1, y2) => Math.hypot(x1 - x2, y1 - y2);
 
     const handleMouseMove = (e) => {
       cursor.current = { x: e.clientX, y: e.clientY };
@@ -29,14 +22,14 @@ function DistortImage({
     const values = {
       x: 0,
       y: 0,
-      rz: 0,
-      scale: 0,
+      rotateX: 0,
+      rotateY: 0,
     };
 
     let rafId;
 
     const render = () => {
-      const rect = svgRef.current?.getBoundingClientRect();
+      const rect = imgRef.current?.getBoundingClientRect();
       if (!rect) return;
 
       const centerX = rect.left + rect.width / 2;
@@ -45,30 +38,22 @@ function DistortImage({
       const distX = cursor.current.x - centerX;
       const distY = cursor.current.y - centerY;
 
-      values.x = lerp(values.x, map(distX, -300, 300, -40, 40), 0.08);
-      values.y = lerp(values.y, map(distY, -300, 300, -40, 40), 0.08);
-      values.rz = lerp(values.rz, map(distX, -300, 300, -6, 6), 0.08);
+      // movement (parallax)
+      values.x = lerp(values.x, map(distX, -300, 300, -20, 20), 0.08);
+      values.y = lerp(values.y, map(distY, -300, 300, -20, 20), 0.08);
 
-      gsap.set(svgRef.current, {
+      // tilt effect (premium feel)
+      values.rotateY = lerp(values.rotateY, map(distX, -300, 300, -8, 8), 0.08);
+      values.rotateX = lerp(values.rotateX, map(distY, -300, 300, 8, -8), 0.08);
+
+      gsap.set(imgRef.current, {
         x: values.x,
         y: values.y,
-        rotateZ: values.rz,
+        rotateX: values.rotateX,
+        rotateY: values.rotateY,
+        transformPerspective: 800,
+        transformOrigin: "center",
       });
-
-      const dist = distance(
-        cachedCursor.current.x,
-        cursor.current.x,
-        cachedCursor.current.y,
-        cursor.current.y
-      );
-
-      values.scale = lerp(values.scale, map(dist, 0, 150, 0, maxDisplacement), 0.06);
-
-      gsap.set(displacementRef.current, {
-        attr: { scale: values.scale },
-      });
-
-      cachedCursor.current = { ...cursor.current };
 
       rafId = requestAnimationFrame(render);
     };
@@ -79,44 +64,16 @@ function DistortImage({
       cancelAnimationFrame(rafId);
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [maxDisplacement]);
+  }, []);
 
   return (
-    <div className="w-full max-w-[300px] aspect-[3/4] mx-auto">
-      <svg
-        ref={svgRef}
-        viewBox="0 0 600 750"
-        className="w-full h-full block rounded-xl overflow-hidden"
-        preserveAspectRatio="xMidYMid slice"
-      >
-        <defs>
-          <filter id="distortFilter">
-            <feTurbulence
-              type="turbulence"
-              baseFrequency={baseFrequency}
-              numOctaves={numOctaves}
-              seed={seed}
-              result="noise"
-            />
-            <feDisplacementMap
-              ref={displacementRef}
-              in="SourceGraphic"
-              in2="noise"
-              scale="0"
-              xChannelSelector="R"
-              yChannelSelector="B"
-            />
-          </filter>
-        </defs>
-
-        <image
-          href={image}
-          width="600"
-          height="750"
-          filter="url(#distortFilter)"
-          preserveAspectRatio="xMidYMid slice"
-        />
-      </svg>
+    <div className="w-[200px] sm:w-[240px] md:w-[280px] lg:w-[340px] aspect-[3/4] mx-auto perspective">
+      <img
+        ref={imgRef}
+        src={image}
+        alt="Hero"
+        className="w-full h-full object-cover rounded-2xl will-change-transform"
+      />
     </div>
   );
 }

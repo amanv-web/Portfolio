@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Svg() {
   return (
-    <motion.div className="relative opacity-40">
+    <motion.div className=" opacity-40">
       
       <motion.div
         className="absolute md:left-100 md:-top-90 -z-10 opacity-20"

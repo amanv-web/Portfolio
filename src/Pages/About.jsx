@@ -110,7 +110,13 @@ const highlightProps = {
     <TextHighlighter {...highlightProps}>
       WPP Production
     </TextHighlighter>{" "}
-    as a frontend developer, where I focus on building scalable email templates and interactive web experiences.
+    as a frontend developer, where I focus on building{" "}
+         <TextHighlighter {...highlightProps}>
+     300+
+    </TextHighlighter>{" "}
+    scalable email templates and  <TextHighlighter {...highlightProps}>
+     28+
+    </TextHighlighter>{" "} interactive web pages.
   </p>
 
   <p className="mb-4 sm:mb-5">
