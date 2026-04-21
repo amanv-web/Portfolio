@@ -95,7 +95,7 @@ return (
 
       {/* CONTENT */}
       <div className="w-full md:w-[58%]">
-
+{/* ABout  */}
         <GradientText
           colors={["#40ffaa", "#4079ff", "#40ffaa"]}
           animationSpeed={3}
