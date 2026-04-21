@@ -62,91 +62,100 @@ const highlightProps = {
     );
   }, []);
 
-  return (
-    <>
-      <Navbar />
+return (
+  <>
+    <Navbar />
 
+    <div
+      ref={containerRef}
+      className="pt-30 
+      max-w-6xl mx-auto 
+      px-6 sm:px-8 lg:px-12 
+      flex  md:flex-row flex-col-reverse items-center
+      md:items-start 
+   
+      gap-4 md:gap-16 
+   text-white"
+      
+    >
 
-      <div
-        ref={containerRef}
-        className="pt-20 md:pl-24 px-4 sm:px-6 lg:px-10 min-h-screen flex justify-around text-white flex-wrap-reverse md:flex-nowrap overflow-x-hidden gap-6 md:gap-10"
-      >
-        {/* Image */}
-        <div className="flex justify-center items-center p-4 w-full md:w-auto">
-          <Atropos className="my-atropos">
-            <img
-              ref={imageRef}
-              src="https://res.cloudinary.com/dsxq0kytm/image/upload/f_auto,q_auto,w_600/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
-              alt="Profile"
-              className="w-60 sm:w-72 md:w-80 h-auto max-w-full object-cover rounded-xl"
-              loading="lazy"
-            />
-          </Atropos>
-        </div>
-
-        {/* Content */}
-       <div className="md:pt-5 md:w-4/6 w-full md:pl-0 pl-2 sm:pl-4 pr-2 sm:pr-4">
-  <GradientText
-    colors={["#40ffaa", "#4079ff", "#40ffaa"]}
-    animationSpeed={3}
-    showBorder={false}
-    className="pb-6 md:pb-1 items-center flex text-center justify-center md:justify-start"
-  >
-    <h2 className="md:text-7xl sm:text-7xl text-5xl font-extrabold text-center md:text-left leading-tight">
-      About me
-    </h2>
-  </GradientText>
-  
- <div className="md:text-md text-sm sm:text-base text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full leading-relaxed">
-  
-  <p className="mb-4 sm:mb-5">
-    I'm Aman Vishwakarma, a{" "}
-    <TextHighlighter {...highlightProps}>
-      full-stack developer
-    </TextHighlighter>{" "}
-    based in India.
-    
-    Currently working at{" "}
-    <TextHighlighter {...highlightProps}>
-      WPP Production
-    </TextHighlighter>{" "}
-    as a frontend developer, where I focus on building{" "}
-         <TextHighlighter {...highlightProps}>
-     300+
-    </TextHighlighter>{" "}
-    scalable email templates and  <TextHighlighter {...highlightProps}>
-     28+
-    </TextHighlighter>{" "} interactive web pages.
-  </p>
-
-  <p className="mb-4 sm:mb-5">
-    I specialize in creating{" "}
-    <TextHighlighter {...highlightProps}>
-      fast, responsive, and user-focused web applications
-    </TextHighlighter>{" "}
-    that are designed for real-world performance, not just visuals.
-    
-    Along with frontend, I work with backend technologies to deliver{" "}
-    <TextHighlighter {...highlightProps}>
-      complete end-to-end solutions
-    </TextHighlighter>.
-  </p>
-
-  <p className="mb-4 sm:mb-5">
-    I have hands-on experience building and deploying real-world projects, collaborating with teams, and solving practical problems.
-    
-    Alongside development, I also teach coding — helping students learn{" "}
-    <TextHighlighter {...highlightProps}>
-      JavaScript, Python, and SQL
-    </TextHighlighter>{" "}
-    with a strong focus on fundamentals.
-  </p>
-
-</div>
-</div>
+      {/* IMAGE */}
+      <div className=" ">
+        <Atropos className="my-atropos">
+          <img
+            ref={imageRef}
+            src="https://res.cloudinary.com/dsxq0kytm/image/upload/f_auto,q_auto,w_600/v1744608394/Picsart_25-01-29_21-45-03-535_1_k7sue6.jpg"
+            alt="Profile"
+            className="w-[240px] sm:w-[280px] md:w-[320px] 
+            object-cover rounded-xl shadow-lg"
+            loading="lazy"
+          />
+        </Atropos>
       </div>
-    </>
-  );
+
+      {/* CONTENT */}
+      <div className="w-full md:w-[58%]">
+
+        <GradientText
+          colors={["#40ffaa", "#4079ff", "#40ffaa"]}
+          animationSpeed={3}
+          showBorder={false}
+          className="md:pb-4  "
+        >
+          <h2 className="text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
+            About me
+          </h2>
+        </GradientText>
+
+        <div className="text-sm sm:text-base text-gray-400 pt-4 leading-relaxed">
+
+          <p className="mb-4">
+            I'm Aman Vishwakarma, a{" "}
+            <TextHighlighter {...highlightProps}>
+              full-stack developer
+            </TextHighlighter>{" "}
+            based in India.
+
+            Currently working at{" "}
+            <TextHighlighter {...highlightProps}>
+              WPP Production
+            </TextHighlighter>{" "}
+            as a frontend developer, where I focus on building{" "}
+            <TextHighlighter {...highlightProps}>300+</TextHighlighter>{" "}
+            scalable email templates and{" "}
+            <TextHighlighter {...highlightProps}>28+</TextHighlighter>{" "}
+            interactive web pages.
+          </p>
+
+          <p className="mb-4">
+            I specialize in creating{" "}
+            <TextHighlighter {...highlightProps}>
+              fast, responsive, and user-focused web applications
+            </TextHighlighter>{" "}
+            that are designed for real-world performance, not just visuals.
+
+            Along with frontend, I work with backend technologies to deliver{" "}
+            <TextHighlighter {...highlightProps}>
+              complete end-to-end solutions
+            </TextHighlighter>.
+          </p>
+
+          <p>
+            I have hands-on experience building and deploying real-world projects, collaborating with teams, and solving practical problems.
+
+            Alongside development, I also teach coding — helping students learn{" "}
+            <TextHighlighter {...highlightProps}>
+              JavaScript, Python, and SQL
+            </TextHighlighter>{" "}
+            with a strong focus on fundamentals.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </>
+);
 }
 
 export default About;

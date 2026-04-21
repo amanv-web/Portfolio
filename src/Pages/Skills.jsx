@@ -70,7 +70,7 @@ function Skills() {
     <>
       <Navbar />
   
-      <section className="max-w-6xl bg-black mx-auto px-6 sm:px-8 lg:px-10 py-16 text-white">
+      <div className="max-w-6xl  bg-black mx-auto px-6 sm:px-8 lg:px-10 md:py-16 text-white">
 
         {/* Heading */}
         <GradientText
@@ -78,9 +78,9 @@ function Skills() {
           animationSpeed={3}
           showBorder={false}
         >
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold mb-6">
+          <h2 className="text-4xl sm:text-6xl md:text-7xl font-extrabold mt-12 md:mb-12 mb-6">
             Skills
-          </h1>
+          </h2>
         </GradientText>
 
       
@@ -123,7 +123,7 @@ function Skills() {
 
         </div>
 
-      </section>
+          </div>
     </>
   );
 }

@@ -66,13 +66,13 @@ const ProjectCard = React.memo(({ project }) => {
 /* PAGE */
 function Projects() {
   return (
-    <section className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16">
+    <section className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 md:py-16">
 
       {/* HEADING */}
       <GradientText colors={["#40ffaa", "#4079ff"]}>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-10 text-left">
+        <h2 className="text-4xl mt-12  sm:text-5xl md:text-6xl font-extrabold md:mb-12 mb-6 text-left">
           Projects
-        </h1>
+        </h2>
       </GradientText>
 
       {/* GRID */}

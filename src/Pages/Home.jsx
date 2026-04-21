@@ -19,7 +19,7 @@ function Home() {
           duration: 1,
           delay: 0.2,
         }}
-        className=" absolute md:top-15 top-5  md:left-14 w-35 h-35 -z-1 brightness-50"
+        className=" absolute md:top-15 top-5  md:left-14 w-35 h-35  brightness-50"
         alt=""
       />
       <div className="relative">

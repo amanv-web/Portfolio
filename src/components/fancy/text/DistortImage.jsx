@@ -67,7 +67,7 @@ function DistortImage({ image }) {
   }, []);
 
   return (
-    <div className="w-[200px] sm:w-[240px] md:w-[280px] lg:w-[340px] aspect-[3/4] mx-auto perspective">
+    <div className="w-[250px] sm:w-[240px] md:w-[280px] lg:w-[340px] aspect-[3/4] mx-auto perspective">
       <img
         ref={imgRef}
         src={image}
