@@ -1,38 +1,63 @@
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
-import { LayoutGroup, motion } from "framer-motion";
+export default function Typewriter({
+  texts = [],
+  speed = 2500,
+  startDelay = 500,
+}) {
+  const [index, setIndex] = useState(0);
+  const [started, setStarted] = useState(false);
 
-import TextRotate from "../fancy/text/text-rotate";
+  // Start delay (prevents instant animation)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setStarted(true);
+    }, startDelay);
 
+    return () => clearTimeout(timer);
+  }, [startDelay]);
 
-export default function Preview() {
+  // Rotate text
+  useEffect(() => {
+    if (!started) return;
+
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % texts.length);
+    }, speed);
+
+    return () => clearInterval(interval);
+  }, [started, texts.length, speed]);
+
+  const currentText = texts[index].split("");
+
   return (
-    <div className=" text-2xl sm:text-3xl md:text-5xl flex flex-row items-center md:pl-0  pl-10  dark:text-muted text-foreground  overflow-hidden  ">
-      <LayoutGroup>
-        <motion.p className="flex  " layout>
-          <motion.span
-            className="pt-0.5 sm:pt-1 md:pt-2 text-white"
-            layout
-            transition={{ type: "spring", damping: 30, stiffness: 400 }}
-          >
-            I am{""}
-          </motion.span>
-          <TextRotate
-            texts={[
-              "Email Developer",
-              "Full stack developer",
-            ]}
-            mainClassName="text-white px-2 sm:px-2 md:px-3 text-[#49e3da] overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
-            staggerFrom={"last"}
-            initial={{ y: "100%" }}
-            animate={{ y: 0 }}
-            exit={{ y: "-120%" }}
-            staggerDuration={0.025}
-            splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-            transition={{ type: "spring", damping: 30, stiffness: 400 }}
-            rotationInterval={2000}
-          />
-        </motion.p>
-      </LayoutGroup>
-    </div>
-  )
+    <span className="inline-flex">
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={index}
+          className="inline-flex"
+        >
+          {currentText.map((char, i) => (
+            <motion.span
+              key={i}
+              initial={{ y: "100%", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: "-120%", opacity: 0 }}
+              transition={{
+                delay: i * 0.03,
+                type: "spring",
+                damping: 25,
+                stiffness: 300,
+              }}
+              className="inline-block"
+            >
+              {/* 🔥 FIXED SPACE ISSUE */}
+              {char === " " ? "\u00A0" : char}
+            </motion.span>
+          ))}
+        </motion.span>
+      </AnimatePresence>
+    </span>
+  );
 }

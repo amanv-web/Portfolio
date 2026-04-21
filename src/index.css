@@ -1,25 +1,33 @@
 @import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-
 @import "tw-animate-css";
-
 body {
   margin: 0;
   padding: 0;
-overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
   width: 100%;
-  background: linear-gradient(
-    to bottom right,
-    #000000 0%,     /* top-right (starting corner) */
-    #0c0c0c 50%,     /* center blend */
-    #0a0a0a 100%     /* bottom-left (soft dark gray) */
-  );
-  color: #f4f4f5; /* light text */
-  font-family: 'Inter', sans-serif;
+
+  /* 🔥 DARK BLACK + SUBTLE PREMIUM GLOW */
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(64, 214, 197, 0.06),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(64, 121, 255, 0.05),
+      transparent 40%
+    ),
+    #000000;
+
+  color: #f4f4f5;
+  font-family: 'Exo 2', sans-serif;
+
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+/* Hide scrollbar */
 body::-webkit-scrollbar {
-  display: none;                /* Chrome, Safari */
+  display: none;
 }

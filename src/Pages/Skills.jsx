@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Home/Navbar";
 import GradientText from "../components/fancy/text/GradientText";
-
 /* ✅ ICONS (ALL VALID) */
 import {
   FaReact,
@@ -70,8 +69,8 @@ function Skills() {
   return (
     <>
       <Navbar />
-
-      <section className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-10 py-16 text-white">
+  
+      <section className="max-w-6xl bg-black mx-auto px-6 sm:px-8 lg:px-10 py-16 text-white">
 
         {/* Heading */}
         <GradientText

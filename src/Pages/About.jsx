@@ -7,7 +7,6 @@ import Atropos from "atropos/react";
 import GradientText from "../components/fancy/text/GradientText";
 import TextHighlighter from "../components/fancy/text/text-highlighter";
 import Lenis from "lenis";
-
 function About() {
   const containerRef = useRef(null);
   const imageRef = useRef(null);
@@ -67,6 +66,7 @@ const highlightProps = {
     <>
       <Navbar />
 
+
       <div
         ref={containerRef}
         className="pt-20 md:pl-24 px-4 sm:px-6 lg:px-10 min-h-screen flex justify-around text-white flex-wrap-reverse md:flex-nowrap overflow-x-hidden gap-6 md:gap-10"
@@ -90,13 +90,13 @@ const highlightProps = {
     colors={["#40ffaa", "#4079ff", "#40ffaa"]}
     animationSpeed={3}
     showBorder={false}
-    className="pb-6 md:pb-1"
+    className="pb-6 md:pb-1 items-center flex text-center justify-center md:justify-start"
   >
-    <h1 className="md:text-8xl sm:text-8xl text-5xl font-extrabold text-center md:text-left leading-tight">
+    <h2 className="md:text-7xl sm:text-7xl text-5xl font-extrabold text-center md:text-left leading-tight">
       About me
-    </h1>
+    </h2>
   </GradientText>
-
+  
  <div className="md:text-md text-sm sm:text-base text-gray-400 md:pt-5 pt-2 md:w-5/6 w-full leading-relaxed">
   
   <p className="mb-4 sm:mb-5">
